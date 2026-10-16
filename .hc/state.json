@@ -556,13 +556,13 @@
   "budgets": {
     "total": 10000000,
     "total_usd": 100.0,
-    "current_usd_spend": 0.5038614
+    "current_usd_spend": 0.53698155
   },
   "token_usage": {
-    "total": 453998,
+    "total": 642563,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 420292,
+      "ProductOwner": 608857,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
@@ -977,6 +977,15 @@
       "summary": "ScrumMaster overrode the 'Review, Retro & Release'-phase gate to call start_sprint after being refused once.",
       "detail": "args: {\"goal\": \"Implement and deliver US-0009 (Admin Dashboard Job Submission and Status Pipeline View) to enable cluster administrators to submit jobs and monitor execution status across the pipeline.\"}",
       "created_at": "2026-10-16T09:54:52.001902+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 20,
+      "kind": "stalled",
+      "summary": "ProductOwner repeated create_sprint_backlog_pr with identical arguments 3x with no progress.",
+      "detail": "🔁 [REPEATED CALL DETECTED] ProductOwner has called create_sprint_backlog_pr with the exact same arguments 3 times in a row with no other distinct call in between - refusing this call. If it failed, that same call will keep failing the same way - address the actual error message, use different arguments, or transfer to whichever role can actually make progress instead of repeating this.",
+      "created_at": "2026-10-16T10:14:07.871616+00:00",
       "resolved": false,
       "resolved_at": null
     }
