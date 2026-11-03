@@ -236,6 +236,19 @@
       "id": "US-0013"
     },
     {
+      "acceptance_criteria": [
+        "Parse the vulnerable package and version from the ingested alert.",
+        "Determine the patched version from vulnerability databases or GitHub Advisory.",
+        "Update the package manifest (e.g., package.json or requirements.txt) with the correct patched version.",
+        "Ensure the generated diff only contains the necessary dependency update."
+      ],
+      "epic_id": "EP-0002",
+      "user_story": "As an AppSec Engineer, I want the system to determine the safe upgrade version for a vulnerable dependency and update the package manifest.",
+      "title": "Generate Dependency Upgrade Patch (Implementation)",
+      "type": "User Story",
+      "id": "US-0014"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -756,7 +769,8 @@
     "specs/stories/US-0002-Generate-Dependency-Upgrade-Patch.md",
     "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md",
     "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md",
-    "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md"
+    "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md",
+    "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
