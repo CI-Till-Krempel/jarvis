@@ -377,7 +377,10 @@
       "priority": "Must",
       "category": "steering",
       "status": "Draft",
-      "version": "Backlog (unplanned)"
+      "version": "Backlog (unplanned)",
+      "stages_completed": [
+        "Draft"
+      ]
     },
     {
       "id": "ISSUE-0011",
