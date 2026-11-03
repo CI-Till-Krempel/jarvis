@@ -587,13 +587,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.1940758
+    "current_usd_spend": 0.2091696
   },
   "token_usage": {
-    "total": 893419,
+    "total": 949947,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 821261,
+      "ProductOwner": 877789,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
