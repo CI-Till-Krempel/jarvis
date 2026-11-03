@@ -226,7 +226,13 @@
         "Draft",
         "Ready",
         "Implemented"
-      ]
+      ],
+      "review_denial": {
+        "stage": "Reviewed",
+        "reason": "The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.",
+        "by": "Architect",
+        "review_count_at_denial": 5
+      }
     },
     {
       "title": "Ingest GitHub Dependabot Alerts (Implementation)",
@@ -578,7 +584,7 @@
   "sprint_number": 6,
   "sprint_backlog_pr_sprint": 6,
   "sprint_backlog_pr_opened": false,
-  "planning_output_commit_count": 21,
+  "planning_output_commit_count": 22,
   "sprint_backlog_pr_content_baseline": 21,
   "sprint_backlog": [
     {
@@ -848,7 +854,13 @@
         "Implement status pipeline view",
         "Connect UI to Control Server"
       ],
-      "estimate": 10000
+      "estimate": 10000,
+      "review_denial": {
+        "stage": "Reviewed",
+        "reason": "The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.",
+        "by": "Architect",
+        "review_count_at_denial": 5
+      }
     }
   ],
   "impediment_log": [
@@ -930,14 +942,15 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 1.6699224000000001
+    "current_usd_spend": 1.9158506000000002
   },
   "token_usage": {
-    "total": 1640471,
+    "total": 2084139,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
-      "DevTeam": 1068436
+      "DevTeam": 1260645,
+      "Architect": 251459
     }
   },
   "story_estimates": {
@@ -1262,9 +1275,9 @@
     "passing": true,
     "git_push_count_at_check": 5
   },
-  "git_push_count": 5,
+  "git_push_count": 6,
   "pr_review_calls": {
-    "Architect": 4,
+    "Architect": 5,
     "QA": 5,
     "DevTeam": 2
   },
