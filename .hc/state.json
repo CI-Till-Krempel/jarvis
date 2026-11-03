@@ -406,15 +406,6 @@
       "version": "Backlog (unplanned)"
     },
     {
-      "id": "ISSUE-0013",
-      "type": "Issue",
-      "title": "Sprint 4 initialization is blocked because release PR #15 (develop -> main) is currently open and unmerged. Merging or closing the release PR is required to start the new sprint.",
-      "status": "Draft",
-      "priority": "Must",
-      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
-      "version": "Backlog (unplanned)"
-    },
-    {
       "title": "Establish a structured story readiness checklist between Product Owner and Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
       "overview": "Establish a structured story readiness checklist between Product Owner and Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
       "owner": "ProductOwner",
@@ -461,6 +452,15 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
+    },
+    {
+      "id": "ISSUE-0013",
+      "type": "Issue",
+      "title": "Sprint 4 initialization is blocked because release PR #15 (develop -> main) is currently open and unmerged. Merging or closing the release PR is required to start the new sprint.",
+      "status": "Draft",
+      "priority": "Won't",
+      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ST-1",
@@ -878,10 +878,10 @@
     "current_usd_spend": 0.4300748
   },
   "token_usage": {
-    "total": 975843,
+    "total": 1018505,
     "agents": {
       "ScrumMaster": 153978,
-      "ProductOwner": 693853,
+      "ProductOwner": 736515,
       "DevTeam": 35335,
       "ScrumOrchestrator": 92677
     }
