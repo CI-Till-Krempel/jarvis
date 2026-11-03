@@ -430,7 +430,7 @@
       "title": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.",
       "status": "Draft",
       "priority": "Must",
-      "version": "v1.0"
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0016",
