@@ -412,11 +412,12 @@
       "id": "ISSUE-0007",
       "type": "Issue",
       "title": "Backlog priority order conflict: US-0004 was marked 'Must' while depending on prerequisite US-0002, causing advance_story_stage to reject advancing US-0002 to Implemented until PO reprioritized US-0004.",
-      "status": "Draft",
+      "status": "Ready",
       "priority": "Must",
       "version": "Backlog (unplanned)",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
