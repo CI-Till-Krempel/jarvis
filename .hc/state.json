@@ -439,7 +439,7 @@
       "notes": "Resolved and closed. PR #22 was superseded by clean rebase PR #25, which merged successfully into develop and was included in release v0.1.5 (PR #26). PR #22 was closed by stakeholder.",
       "type": "Issue",
       "status": "Draft",
-      "version": "Backlog (unplanned)"
+      "version": "v1.0"
     },
     {
       "id": "EP-0005",
