@@ -15,6 +15,7 @@
 
 ## Notes
 
+- ⚠️ REVIEW DENIED at Tested by QA: The HTTP calls in Main.kt for submitting and polling jobs are commented out (`// client.get` and `// setBody(newJob)`). This means the implementation does not actually satisfy the acceptance criteria of communicating with the Control Server. Please implement the actual API calls instead of leaving them commented out.
 
 ## Test Approach
 UI tests and mock Control Server responses.

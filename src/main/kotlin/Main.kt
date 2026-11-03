@@ -10,16 +10,30 @@ import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*
-import io.ktor.client.statement.*
+import io.ktor.client.call.*
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
 
 val client = HttpClient(CIO) {
     install(ContentNegotiation) {
-        json()
+        json(Json {
+            ignoreUnknownKeys = true
+        })
     }
 }
+
+@Serializable
+data class Job(
+    val dockerImage: String,
+    val command: String,
+    val targetNodeTags: String,
+    val status: String
+)
 
 @Composable
 @Preview
@@ -32,14 +46,14 @@ fun App() {
 
     LaunchedEffect(Unit) {
         while (true) {
-            // Poll for jobs (mocked for now, but uses the client)
+            // Poll for jobs
             try {
-                // val response = client.get("http://control-server/jobs")
-                // jobs = response.body()
-                delay(5000)
+                 val response: List<Job> = client.get("http://localhost:8080/jobs").body()
+                 jobs = response
             } catch (e: Exception) {
-                // handle error
+                // handle error silently in UI, potentially log it
             }
+            delay(5000)
         }
     }
 
@@ -68,12 +82,14 @@ fun App() {
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {
                 val newJob = Job(dockerImage, command, targetNodeTags, "Queued")
-                jobs = jobs + newJob
                 coroutineScope.launch {
                     try {
-                         client.post("http://control-server/submit") {
-                             // setBody(newJob)
+                         client.post("http://localhost:8080/submit") {
+                             contentType(ContentType.Application.Json)
+                             setBody(newJob)
                          }
+                         // Optimistically add to local state
+                         jobs = jobs + newJob
                     } catch (e: Exception) {
                         // Handle error
                     }
@@ -102,13 +118,6 @@ fun App() {
         }
     }
 }
-
-data class Job(
-    val dockerImage: String,
-    val command: String,
-    val targetNodeTags: String,
-    val status: String
-)
 
 fun main() = application {
     Window(onCloseRequest = ::exitApplication, title = "Admin Dashboard") {
