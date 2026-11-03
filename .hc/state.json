@@ -906,6 +906,14 @@
       "status": "open",
       "category": "steering",
       "sprint_number": 2
+    },
+    {
+      "action": "ProductOwner must refrain from reprioritizing stories or using set_priority during the Development phase, as the Sprint Backlog is already committed.",
+      "owner": "ProductOwner",
+      "success_metric": "Zero set_priority rejections during the Development phase in the next sprint.",
+      "status": "open",
+      "category": "steering",
+      "sprint_number": 6
     }
   ],
   "decision_log": [
@@ -944,13 +952,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 3.3978446
+    "current_usd_spend": 3.579865
   },
   "token_usage": {
-    "total": 5097056,
+    "total": 5262073,
     "agents": {
-      "ScrumMaster": 42468,
-      "ProductOwner": 529567,
+      "ScrumMaster": 125651,
+      "ProductOwner": 611401,
       "DevTeam": 3305073,
       "Architect": 449471,
       "QA": 770477
