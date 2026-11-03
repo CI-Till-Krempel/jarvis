@@ -424,11 +424,12 @@
       "id": "ISSUE-0005",
       "type": "Issue",
       "title": "Validate story dependency sequences during sprint planning to ensure prerequisite foundational stories always hold higher priority than downstream dependent stories.",
-      "status": "Draft",
+      "status": "Ready",
       "priority": "Must",
       "version": "Backlog (unplanned)",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
