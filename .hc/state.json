@@ -327,6 +327,20 @@
       "status": "Draft"
     },
     {
+      "id": "US-0012",
+      "type": "User Story",
+      "title": "Energy Consumption Correlation and Reporting per Job",
+      "status": "Ready",
+      "priority": "Must",
+      "user_story": "As an administrator, I want the Control Server to correlate smart plug energy data with individual job runs, so that the total kilowatt-hour cost of batch LLM inference jobs can be analyzed and reported.",
+      "acceptance_criteria": [
+        "Given a completed job run with start and end timestamps and an assigned node, When the job completes, Then the Control Server computes the integrated energy consumption (kWh) over the job duration from the smart plug metrics.",
+        "Given computed job energy metrics, When the admin requests job execution details via the API or dashboard, Then the total energy consumed (kWh) and average power draw (W) are returned in the job report."
+      ],
+      "notes": "Replaces physical smart plug telemetry with native OS power metrics (macOS powermetrics/IOKit, Windows RAPL) and software TDP estimation models.",
+      "version": "v0.2"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -351,20 +365,6 @@
       "category": "steering",
       "status": "Draft",
       "version": "Backlog (unplanned)"
-    },
-    {
-      "id": "US-0012",
-      "type": "User Story",
-      "title": "Energy Consumption Correlation and Reporting per Job",
-      "status": "Ready",
-      "priority": "Could",
-      "user_story": "As an administrator, I want the Control Server to correlate smart plug energy data with individual job runs, so that the total kilowatt-hour cost of batch LLM inference jobs can be analyzed and reported.",
-      "acceptance_criteria": [
-        "Given a completed job run with start and end timestamps and an assigned node, When the job completes, Then the Control Server computes the integrated energy consumption (kWh) over the job duration from the smart plug metrics.",
-        "Given computed job energy metrics, When the admin requests job execution details via the API or dashboard, Then the total energy consumed (kWh) and average power draw (W) are returned in the job report."
-      ],
-      "notes": "Replaces physical smart plug telemetry with native OS power metrics (macOS powermetrics/IOKit, Windows RAPL) and software TDP estimation models.",
-      "version": "v0.2"
     },
     {
       "id": "EP-0006",
@@ -875,13 +875,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.3234844
+    "current_usd_spend": 0.367298
   },
   "token_usage": {
-    "total": 850550,
+    "total": 938611,
     "agents": {
       "ScrumMaster": 153978,
-      "ProductOwner": 568560,
+      "ProductOwner": 656621,
       "DevTeam": 35335,
       "ScrumOrchestrator": 92677
     }
