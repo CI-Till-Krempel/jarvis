@@ -340,6 +340,7 @@
   "sprint_goal": "Implement and deliver US-0009 (Admin Dashboard Job Submission and Status Pipeline View) to enable cluster administrators to submit jobs and monitor execution status across the pipeline.",
   "sprint_number": 4,
   "sprint_backlog_pr_sprint": 3,
+  "sprint_backlog_pr_opened": true,
   "planning_output_commit_count": 16,
   "sprint_backlog_pr_content_baseline": 10,
   "sprint_backlog": [
@@ -554,19 +555,19 @@
   ],
   "sprint_report": "",
   "budgets": {
-    "total": 10000000,
-    "total_usd": 100.0,
-    "current_usd_spend": 0.53698155
+    "total": 5000000,
+    "total_usd": 0.5,
+    "current_usd_spend": 0.1246076
   },
   "token_usage": {
-    "total": 642563,
+    "total": 820403,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 608857,
+      "ProductOwner": 748245,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
-      "ScrumOrchestrator": 367496,
+      "ScrumOrchestrator": 405948,
       "QualityGuardian": 14245
     }
   },
@@ -659,30 +660,26 @@
   "kpi_baseline": 5,
   "backlog_scope_complete": true,
   "repo": {
-    "url": "git@github.com:CI-Till-Krempel/heinzelmann.git",
-    "local_path": "/Users/tkrempel/Projekte/heinzelmann",
+    "url": "git@github.com:CI-Till-Krempel/jarvis.git",
+    "local_path": "/Users/tkrempel/Projekte/jarvis",
     "default_branch": "main"
   },
   "messages": [
     {
       "role": "system",
-      "content": "\n[SPRINT PHASE: Development] This sprint's Sprint Backlog is published - implement/review/test/accept its stories. New backlog grooming or re-planning belongs in Conceptual Work/Plan & Start Sprint, not here.\n"
+      "content": "\n[SPRINT PHASE: Plan & Start Sprint] The Ready backlog is deep enough - Scrum Master calls start_sprint(goal) if that hasn't happened yet this sprint, then Product Owner publishes it via create_sprint_backlog_pr(). More backlog grooming belongs here only for a specific, stated reason, not as a default.\n"
     },
     {
       "role": "user",
-      "content": "Replay your last message"
+      "content": "Hi"
     },
     {
       "role": "model",
-      "content": "Checking repo status and budget usage to determine current sprint context."
+      "content": "**1) Current understanding / assumptions**\nHi there! Welcome back to the team. Based on our current state, we are in the **Plan & Start Sprint** phase. We have a healthy set of stories in the Ready stage and are well-positioned to officially kick off our next iteration. \n\n**2) Missing settings (if any) and Setup status**\nSetup is fully complete!\n- **Repository:** Connected to `jarvis` (branch: `main`) via GitHub App.\n- **Budget Status:** $0.00 of $0.50 USD spent. Token usage is healthy at ~654,660 / 5,000,000 (~13%).\n\n**3) Artifacts updated (explicit keys changed)**\nNone yet.\n\n**4) Next actions (who/what)**\nHere are a few concrete options for what we can tackle next. What would you like to focus on?\n\n1. **Start a new sprint** - The **Scrum Master** will officially initiate the sprint, and the **Product Owner** will publish the Sprint Backlog PR. *(Please provide a sprint goal if you have one in mind!)*\n2. **Discuss the sprint backlog / Refine User Stories** - The **Product Owner** and **Architect** can groom, review, or adjust acceptance criteria before we lock the sprint in.\n3. **Improve the roadmap / Plan version increments** - The **Product Owner** can step back to review the product vision and refine `specs/ROADMAP.md` to map out our longer-term milestones.\n4. **Discuss impediments / Implement Retro Actions** - The **Scrum Master** can help address any lingering blockers or process improvements from the last retrospective before we dive in."
     },
     {
-      "role": "model",
-      "content": "Listing documentation to check the active stories and sprint status."
-    },
-    {
-      "role": "model",
-      "content": "Reading specs/ROADMAP.md to inspect current sprint stories and stage progress."
+      "role": "user",
+      "content": "2"
     }
   ],
   "hc_version": "0.1.0",
@@ -786,6 +783,7 @@
     "specs/reports/RETRO-005.md",
     "specs/reports/STEERING-004.md"
   ],
+  "source_content_change_count": 0,
   "last_check_build": {
     "manifest_write_count_at_check": 0
   },
@@ -802,6 +800,8 @@
   "architect_review_baseline": 4,
   "qa_review_baseline": 5,
   "qa_tested_baseline": 9,
+  "content_loss_warnings": [],
+  "content_loss_acknowledged_baseline": 0,
   "sprint_backlog_engagement_baseline": {
     "Architect": 2,
     "QA": 2,
@@ -1028,6 +1028,8 @@
       "branch": "steering/productowner-identity-20261015063218"
     }
   ],
+  "framework_change_proposal_count": 0,
+  "framework_change_proposals": [],
   "blocked_story_ids_as_of_last_report": [],
   "accepted_count_baseline": 9,
   "version_goals": {
