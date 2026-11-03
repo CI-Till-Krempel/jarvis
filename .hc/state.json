@@ -374,6 +374,14 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0008",
+      "type": "Issue",
+      "title": "Ensure newly filed process and retrospective tracking issues are assigned Won't or lowest priority at creation time so they do not block active sprint user stories in advance_story_stage.",
+      "status": "Draft",
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -393,14 +401,6 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
-    },
-    {
-      "id": "ISSUE-0008",
-      "type": "Issue",
-      "title": "Ensure newly filed process and retrospective tracking issues are assigned Won't or lowest priority at creation time so they do not block active sprint user stories in advance_story_stage.",
-      "status": "Draft",
-      "priority": "Won't",
-      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0007",
