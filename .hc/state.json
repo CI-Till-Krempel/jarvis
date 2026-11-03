@@ -7,14 +7,20 @@
     {
       "id": "US-0005",
       "type": "User Story",
-      "title": "Control Server Job Queue and Dispatcher",
+      "title": "Create GitHub PR with Fix and Audit Info",
       "status": "Accepted",
       "priority": "Must",
-      "user_story": "As a cluster administrator, I want the Control Server to queue jobs and dispatch them to eligible online nodes based on availability and resource capacity, so that workloads are completed efficiently across the fleet.",
+      "user_story": "As a Developer, I want the tool to open a Pull Request with the validated fix, including a detailed description of the vulnerability and the test results, so that I can quickly review and merge it.",
       "acceptance_criteria": [
-        "Given batch job submissions via API, When jobs are enqueued, Then the Control Server schedules and assigns them to available nodes matching resource constraints and requirements.",
-        "Given an assigned job, When a node stops reporting heartbeats before job completion, Then the Control Server detects the failure and re-queues the job for execution on an alternate available node."
-      ]
+        "Push the validated patch to a new branch in the target GitHub repository.",
+        "Open a Pull Request against the default branch.",
+        "PR description must include: vulnerability details (CVE), reason for fix, test results, and risk assessment.",
+        "Apply appropriate labels to the PR (e.g., 'security', 'auto-fix')."
+      ],
+      "depends_on": [
+        "US-0004"
+      ],
+      "epic_id": "EP-0001"
     },
     {
       "id": "EP-0001",
@@ -806,7 +812,8 @@
     "specs/stories/EP-0003-Validation-&-Sandbox-Execution.md",
     "specs/stories/US-0001-Ingest-GitHub-Dependabot-Alerts.md",
     "specs/stories/US-0002-Generate-Dependency-Upgrade-Patch.md",
-    "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md"
+    "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md",
+    "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
