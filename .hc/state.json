@@ -224,6 +224,18 @@
       "notes": "Allows operators to submit jobs with governance constraints and monitor real-time execution alongside energy and cost ROI."
     },
     {
+      "title": "Ingest GitHub Dependabot Alerts (Implementation)",
+      "acceptance_criteria": [
+        "Connect to GitHub API using App/Token authentication.",
+        "Fetch open Dependabot alerts for a specified repository.",
+        "Map the alerts into an internal format suitable for the Triage Queue."
+      ],
+      "user_story": "As a security tool, I want to ingest Dependabot alerts from a GitHub repository so that I can automatically triage and fix vulnerable dependencies.",
+      "epic_id": "EP-0001",
+      "type": "User Story",
+      "id": "US-0013"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -371,7 +383,7 @@
   "sprint_number": 5,
   "sprint_backlog_pr_sprint": 3,
   "sprint_backlog_pr_opened": true,
-  "planning_output_commit_count": 16,
+  "planning_output_commit_count": 17,
   "sprint_backlog_pr_content_baseline": 10,
   "sprint_backlog": [
     {
@@ -587,11 +599,14 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.2441662
+    "current_usd_spend": 0.426881
   },
   "token_usage": {
-    "total": 0,
-    "agents": {}
+    "total": 146593,
+    "agents": {
+      "ScrumMaster": 27410,
+      "ProductOwner": 119183
+    }
   },
   "story_estimates": {
     "US-0010": {
