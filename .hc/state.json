@@ -686,6 +686,42 @@
       "estimate": 4000,
       "risks": "Difficulty in accurately parsing different package manifest formats.",
       "approach": "Create a patch_generator module that parses a Finding, determines the safe version, and safely updates the project's dependency manifest."
+    },
+    {
+      "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
+      "acceptance_criteria": [
+        "Analyze the codebase for usages of the upgraded dependency.",
+        "Identify breaking changes between the old and new version of the dependency.",
+        "Modify the calling code to match the new API if necessary.",
+        "Include these code changes alongside the dependency version bump in the generated patch."
+      ],
+      "user_story": "As a Developer, I want the automated fix to adapt my code to breaking API changes introduced by the dependency upgrade, so that the PR doesn't break the build.",
+      "epic_id": "EP-0002",
+      "type": "User Story",
+      "id": "US-0015",
+      "depends_on": [
+        "US-0014"
+      ],
+      "priority": "Should",
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft",
+      "risks": "High complexity in correctly adapting API usage across different languages.",
+      "tasks": [
+        "Analyze codebase for usages of the upgraded dependency.",
+        "Modify the calling code if API breaks.",
+        "Include these modifications in the final patch."
+      ],
+      "approach": "Implement an api_adapter module to analyze codebase usages of the dependency and apply API changes to prevent build breaks.",
+      "dod_checks": [
+        "Code reviewed-ready",
+        "Automated tests written and passing",
+        "Actual tokens spent logged"
+      ],
+      "test_approach": "Use dummy code snippets and verify that the adapter applies correct modifications.",
+      "estimate": 6000
     }
   ],
   "impediment_log": [
@@ -783,6 +819,9 @@
     },
     "US-0014": {
       "estimate": 4000
+    },
+    "US-0015": {
+      "estimate": 6000
     }
   },
   "sprint_report_kpis": {},
