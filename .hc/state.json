@@ -349,7 +349,8 @@
       "notes": "Categorized as steering change: A process and behavioral steering adjustment for DevTeam to enforce pre-push rebase checks against develop, preventing branch divergence and merge conflicts on specs/ROADMAP.md.",
       "priority": "Could",
       "category": "steering",
-      "status": "Draft"
+      "status": "Draft",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "US-0012",
@@ -390,35 +391,40 @@
       "type": "Issue",
       "title": "Product Owner should automatically create and merge the sprint backlog PR immediately after sprint kickoff so DevTeam does not encounter start_feature_branch gate rejections.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0008",
       "type": "Issue",
       "title": "Ensure newly filed process and retrospective tracking issues are assigned Won't or lowest priority at creation time so they do not block active sprint user stories in advance_story_stage.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0007",
       "type": "Issue",
       "title": "Backlog priority order conflict: US-0004 was marked 'Must' while depending on prerequisite US-0002, causing advance_story_stage to reject advancing US-0002 to Implemented until PO reprioritized US-0004.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0005",
       "type": "Issue",
       "title": "Validate story dependency sequences during sprint planning to ensure prerequisite foundational stories always hold higher priority than downstream dependent stories.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0003",
       "type": "Issue",
       "title": "Streamline ProductOwner specification drafting and backlog grooming sessions with strict prompt timeboxes and pre-structured templates to keep PO token usage under 30% of sprint budget.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0013",
@@ -426,7 +432,8 @@
       "title": "Sprint 4 initialization is blocked because release PR #15 (develop -> main) is currently open and unmerged. Merging or closing the release PR is required to start the new sprint.",
       "status": "Draft",
       "priority": "Won't",
-      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly."
+      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
+      "version": "Backlog (unplanned)"
     },
     {
       "title": "Establish a structured story readiness checklist between Product Owner and Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
@@ -435,7 +442,8 @@
       "type": "Issue",
       "id": "ISSUE-0014",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ST-1",
@@ -443,7 +451,8 @@
       "title": "Updated Story",
       "status": "in_progress",
       "priority": "Won't",
-      "user_story": "As a <role>, I want <capability>, so that <benefit>."
+      "user_story": "As a <role>, I want <capability>, so that <benefit>.",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ST-2",
@@ -451,14 +460,16 @@
       "status": "in_progress",
       "type": "User Story",
       "priority": "Won't",
-      "user_story": "As a <role>, I want <capability>, so that <benefit>."
+      "user_story": "As a <role>, I want <capability>, so that <benefit>.",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0009",
       "type": "Issue",
       "title": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.",
       "status": "Draft",
-      "priority": "Won't"
+      "priority": "Won't",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0016",
@@ -466,7 +477,8 @@
       "title": "Pull request #22 (feature/US-0008-ollama-model-runner) cannot be cleanly merged into develop due to a merge conflict on specs/ROADMAP.md.",
       "notes": "Resolved and closed. PR #22 was superseded by clean rebase PR #25, which merged successfully into develop and was included in release v0.1.5 (PR #26). PR #22 was closed by stakeholder.",
       "type": "Issue",
-      "status": "Draft"
+      "status": "Draft",
+      "version": "Backlog (unplanned)"
     }
   ],
   "definition_of_done": [],
