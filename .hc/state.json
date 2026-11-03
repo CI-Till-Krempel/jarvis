@@ -338,7 +338,7 @@
         "Given computed job energy metrics, When the admin requests job execution details via the API or dashboard, Then the total energy consumed (kWh) and average power draw (W) are returned in the job report."
       ],
       "notes": "Replaces physical smart plug telemetry with native OS power metrics (macOS powermetrics/IOKit, Windows RAPL) and software TDP estimation models.",
-      "version": "v1.0"
+      "version": "v0.2"
     },
     {
       "id": "US-0011",
@@ -1177,7 +1177,8 @@
     "specs/reports/SPRINT-REPORT-006.md",
     "specs/reports/RETRO-006.md",
     "specs/reports/STEERING-006.md",
-    "specs/reports/TRANSCRIPT-006.md"
+    "specs/reports/TRANSCRIPT-006.md",
+    "specs/stories/US-0009-Admin-Dashboard-Job-Submission-and-Status-Pipeline-View.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
