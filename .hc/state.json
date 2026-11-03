@@ -875,15 +875,15 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.1964034
+    "current_usd_spend": 0.2581454
   },
   "token_usage": {
-    "total": 657212,
+    "total": 777610,
     "agents": {
       "ScrumMaster": 153978,
-      "ProductOwner": 408910,
+      "ProductOwner": 495620,
       "DevTeam": 35335,
-      "ScrumOrchestrator": 58989
+      "ScrumOrchestrator": 92677
     }
   },
   "story_estimates": {
@@ -1040,6 +1040,18 @@
     {
       "role": "user",
       "content": "For context:[ScrumMaster] `transfer_to_agent` tool returned result: {'result': None}"
+    },
+    {
+      "role": "model",
+      "content": "**Current Understanding & Setup Status:**\nThe previous sprint has been finalized (Sprint Report created and Release PR #1 opened). However, the new sprint cannot start because the Release PR from `develop` to `main` has not yet been merged (it requires human action out-of-band to merge). \nSetup is complete, and the budget has been correctly initialized.\n\n**Artifacts Updated:**\n- Logged a blocking interaction (ID: 24) requesting the merge of Release PR #1.\n- Recorded human approval for the release.\n\n**Next Actions (Who/What):**\n- **You (Human):** Please review and merge Release PR #1 on GitHub (`develop` -> `main`). \n- **Once merged**, let me know so I can instruct the Scrum Master to officially call `start_sprint` for the new sprint."
+    },
+    {
+      "role": "user",
+      "content": "Merged. Seems like we were using an old version to create this. Please update specs and retro items to the newest schema, priorities and formats."
+    },
+    {
+      "role": "model",
+      "content": "Transferring to the Product Owner to update the specs and priorities to the new schema, and to coordinate with the Scrum Master on updating the retro items and starting the sprint."
     }
   ],
   "hc_version": "0.1.0",
