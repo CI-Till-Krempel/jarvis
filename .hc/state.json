@@ -249,7 +249,8 @@
       "title": "Generate Dependency Upgrade Patch (Implementation)",
       "type": "User Story",
       "id": "US-0014",
-      "priority": "Must"
+      "priority": "Must",
+      "version": "v0.1.0-MVP"
     },
     {
       "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
