@@ -406,6 +406,15 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0013",
+      "type": "Issue",
+      "title": "Sprint 4 initialization is blocked because release PR #15 (develop -> main) is currently open and unmerged. Merging or closing the release PR is required to start the new sprint.",
+      "status": "Draft",
+      "priority": "Must",
+      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -425,15 +434,6 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
-    },
-    {
-      "id": "ISSUE-0013",
-      "type": "Issue",
-      "title": "Sprint 4 initialization is blocked because release PR #15 (develop -> main) is currently open and unmerged. Merging or closing the release PR is required to start the new sprint.",
-      "status": "Draft",
-      "priority": "Won't",
-      "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
-      "version": "Backlog (unplanned)"
     },
     {
       "title": "Establish a structured story readiness checklist between Product Owner and Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
