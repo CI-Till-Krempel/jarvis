@@ -425,6 +425,14 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0009",
+      "type": "Issue",
+      "title": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.",
+      "status": "Draft",
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -461,14 +469,6 @@
       "type": "User Story",
       "priority": "Won't",
       "user_story": "As a <role>, I want <capability>, so that <benefit>.",
-      "version": "Backlog (unplanned)"
-    },
-    {
-      "id": "ISSUE-0009",
-      "type": "Issue",
-      "title": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.",
-      "status": "Draft",
-      "priority": "Won't",
       "version": "Backlog (unplanned)"
     },
     {
