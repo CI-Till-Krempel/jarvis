@@ -312,7 +312,11 @@
         "US-0014"
       ],
       "priority": "Should",
-      "version": "v0.1.0-MVP"
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft"
     },
     {
       "id": "EP-0005",
