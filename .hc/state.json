@@ -921,13 +921,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.52211
+    "current_usd_spend": 0.5644196
   },
   "token_usage": {
-    "total": 1110136,
+    "total": 1201103,
     "agents": {
-      "ScrumMaster": 153978,
-      "ProductOwner": 828146,
+      "ScrumMaster": 195888,
+      "ProductOwner": 877203,
       "DevTeam": 35335,
       "ScrumOrchestrator": 92677
     }
@@ -1473,8 +1473,8 @@
       "summary": "Release PR needs merging",
       "detail": "The previous sprint's release PR is open and needs to be merged into main before the new sprint can begin.",
       "created_at": "2026-11-03T13:38:04.629552+00:00",
-      "resolved": false,
-      "resolved_at": null
+      "resolved": true,
+      "resolved_at": "2026-11-03T13:47:03.601945+00:00"
     }
   ],
   "overclaim_rejection_counts": {},
