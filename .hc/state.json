@@ -878,10 +878,10 @@
     "current_usd_spend": 0.1269932
   },
   "token_usage": {
-    "total": 511109,
+    "total": 529292,
     "agents": {
       "ScrumMaster": 79130,
-      "ProductOwner": 353823,
+      "ProductOwner": 372006,
       "DevTeam": 35335,
       "ScrumOrchestrator": 42821
     }
@@ -1024,6 +1024,10 @@
     {
       "type": "sprint",
       "note": "Human approved Sprint 4 goal and backlog covering US-0009."
+    },
+    {
+      "type": "release",
+      "note": "Human review completed."
     }
   ],
   "sprint_approval_baseline": 4,
