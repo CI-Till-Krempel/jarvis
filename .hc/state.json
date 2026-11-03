@@ -220,7 +220,7 @@
         "Given the Compose for Desktop Admin Dashboard, When the admin enters job parameters (docker image, command, target node tags) and clicks Submit, Then the job is posted to the Control Server and appears in the active queue table.",
         "Given active running jobs in the cluster, When the admin views the Job Pipeline view, Then each job's live state (Queued, Running, Succeeded, Failed) and execution duration are dynamically updated."
       ],
-      "version": "v0.2",
+      "version": "v1.0",
       "notes": "Allows operators to submit jobs with governance constraints and monitor real-time execution alongside energy and cost ROI."
     },
     {
