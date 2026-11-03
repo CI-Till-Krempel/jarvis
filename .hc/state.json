@@ -257,9 +257,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft"
+      "status": "Ready"
     },
     {
       "epic_id": "EP-0003",
@@ -683,9 +684,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft",
+      "status": "Ready",
       "test_approach": "Unit test with mock requirements.txt/package.json files to ensure only target dependency is updated.",
       "dod_checks": [
         "Code reviewed-ready",
