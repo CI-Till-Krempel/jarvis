@@ -213,7 +213,7 @@
       "id": "US-0009",
       "type": "User Story",
       "title": "Admin Dashboard Job Submission and Status Pipeline View",
-      "status": "Implemented",
+      "status": "Reviewed",
       "priority": "Must",
       "user_story": "As an IT administrator, I want a Compose for Desktop UI to submit batch job configurations and view active job progress in real time, so that I can manage and monitor cluster workload execution.",
       "acceptance_criteria": [
@@ -225,14 +225,10 @@
       "stages_completed": [
         "Draft",
         "Ready",
-        "Implemented"
+        "Implemented",
+        "Reviewed"
       ],
-      "review_denial": {
-        "stage": "Reviewed",
-        "reason": "The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.",
-        "by": "Architect",
-        "review_count_at_denial": 5
-      }
+      "review_denial": null
     },
     {
       "title": "Ingest GitHub Dependabot Alerts (Implementation)",
@@ -826,7 +822,7 @@
       "id": "US-0009",
       "type": "User Story",
       "title": "Admin Dashboard Job Submission and Status Pipeline View",
-      "status": "Implemented",
+      "status": "Reviewed",
       "priority": "Must",
       "user_story": "As an IT administrator, I want a Compose for Desktop UI to submit batch job configurations and view active job progress in real time, so that I can manage and monitor cluster workload execution.",
       "acceptance_criteria": [
@@ -838,7 +834,8 @@
       "stages_completed": [
         "Draft",
         "Ready",
-        "Implemented"
+        "Implemented",
+        "Reviewed"
       ],
       "code_files": [],
       "dod_checks": [
@@ -855,12 +852,7 @@
         "Connect UI to Control Server"
       ],
       "estimate": 10000,
-      "review_denial": {
-        "stage": "Reviewed",
-        "reason": "The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.",
-        "by": "Architect",
-        "review_count_at_denial": 5
-      }
+      "review_denial": null
     }
   ],
   "impediment_log": [
@@ -942,15 +934,15 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 1.9158506000000002
+    "current_usd_spend": 2.1709490000000002
   },
   "token_usage": {
-    "total": 2084139,
+    "total": 2748247,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
-      "DevTeam": 1260645,
-      "Architect": 251459
+      "DevTeam": 1794278,
+      "Architect": 381934
     }
   },
   "story_estimates": {
@@ -1186,7 +1178,7 @@
   "sprint_approval_baseline": 4,
   "release_approval_baseline": 7,
   "dev_touch_baseline": 2,
-  "unadvanced_write_nudge_baseline": 0,
+  "unadvanced_write_nudge_baseline": 4,
   "sprint_files_touched": [
     "specs/stories/ST-2-Repeated-Story.md",
     "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job-via-OS-and-Utilization-Telemetry.md",
@@ -1267,21 +1259,21 @@
     "build.gradle.kts",
     "src/main/kotlin/Main.kt"
   ],
-  "source_content_change_count": 2,
+  "source_content_change_count": 4,
   "last_check_build": {
     "manifest_write_count_at_check": 0
   },
   "last_pr_checks": {
     "passing": true,
-    "git_push_count_at_check": 5
+    "git_push_count_at_check": 7
   },
-  "git_push_count": 6,
+  "git_push_count": 7,
   "pr_review_calls": {
-    "Architect": 5,
+    "Architect": 7,
     "QA": 5,
     "DevTeam": 2
   },
-  "architect_review_baseline": 4,
+  "architect_review_baseline": 7,
   "qa_review_baseline": 5,
   "qa_tested_baseline": 9,
   "content_loss_warnings": [],
