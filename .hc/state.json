@@ -398,6 +398,14 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0003",
+      "type": "Issue",
+      "title": "Streamline ProductOwner specification drafting and backlog grooming sessions with strict prompt timeboxes and pre-structured templates to keep PO token usage under 30% of sprint budget.",
+      "status": "Draft",
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -417,14 +425,6 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
-    },
-    {
-      "id": "ISSUE-0003",
-      "type": "Issue",
-      "title": "Streamline ProductOwner specification drafting and backlog grooming sessions with strict prompt timeboxes and pre-structured templates to keep PO token usage under 30% of sprint budget.",
-      "status": "Draft",
-      "priority": "Won't",
-      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0013",
