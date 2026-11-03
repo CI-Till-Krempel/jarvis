@@ -262,6 +262,19 @@
       "id": "US-0015"
     },
     {
+      "epic_id": "EP-0003",
+      "title": "Sandbox Validation of Fixes (Implementation)",
+      "acceptance_criteria": [
+        "Apply the generated patch in an ephemeral container/sandbox environment.",
+        "Execute project build commands (e.g., npm install, pip install).",
+        "Run existing test suites in the sandbox.",
+        "If the build or tests fail, capture the error log and return it to the fix generation agent for iteration."
+      ],
+      "user_story": "As a Platform Lead, I want generated patches to be compiled and tested in an isolated sandbox before a PR is created, so that no broken code is suggested to developers.",
+      "type": "User Story",
+      "id": "US-0016"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -784,7 +797,8 @@
     "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md",
     "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md",
     "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md",
-    "specs/stories/US-0014-Generate-Dependency-Upgrade-Patch-(Implementation).md"
+    "specs/stories/US-0014-Generate-Dependency-Upgrade-Patch-(Implementation).md",
+    "specs/stories/US-0015-Handle-Breaking-API-Changes-in-SCA-Fixes-(Implementation).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
