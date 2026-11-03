@@ -582,13 +582,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.1532558
+    "current_usd_spend": 0.1940758
   },
   "token_usage": {
-    "total": 867381,
+    "total": 893419,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 795223,
+      "ProductOwner": 821261,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
@@ -813,7 +813,8 @@
     "specs/stories/US-0001-Ingest-GitHub-Dependabot-Alerts.md",
     "specs/stories/US-0002-Generate-Dependency-Upgrade-Patch.md",
     "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md",
-    "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md"
+    "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md",
+    "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
