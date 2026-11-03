@@ -82,6 +82,13 @@ Stories
 
 
 Stories
+- [SPEC-ISSUE-0001] The gradlew script was committed without executable permissions, causing the test suite execution to fail during the Tested gate. DevTeam needs to ensure executable permissions are set before pushing wrapper scripts.
+  - [ ] DRAFT
+  - [ ] READY
+  - [ ] IMPLEMENTED
+  - [ ] REVIEWED
+  - [ ] TESTED
+  - [ ] ACCEPTED
 - [ISSUE-0009] Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.
   - [x] DRAFT
   - [x] READY
