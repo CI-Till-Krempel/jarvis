@@ -363,7 +363,7 @@
       "priority": "Must",
       "category": "steering",
       "status": "Draft",
-      "version": "v1.0"
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0011",
@@ -1179,7 +1179,8 @@
     "specs/reports/STEERING-006.md",
     "specs/reports/TRANSCRIPT-006.md",
     "specs/stories/US-0009-Admin-Dashboard-Job-Submission-and-Status-Pipeline-View.md",
-    "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job.md"
+    "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job.md",
+    "specs/stories/US-0011-Smart-Plug-Telemetry-Collector-for-Shelly-and-Tapo.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
