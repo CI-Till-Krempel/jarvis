@@ -230,9 +230,9 @@
       ],
       "review_denial": {
         "stage": "Tested",
-        "reason": "The test suite could not be executed because there is no Gradle wrapper (`gradlew`) committed to the repository, and the system `gradle` command is not available. Please commit the Gradle wrapper files (e.g., `gradlew`, `gradlew.bat`, and the `gradle/wrapper/` directory) and ensure there is at least one test.",
+        "reason": "The `gradlew` script does not have execute permissions (`Permission denied`), so the test suite cannot be run. Please run `git update-index --chmod=+x gradlew` and commit the change to give it execute permissions.",
         "by": "QA",
-        "review_count_at_denial": 7
+        "review_count_at_denial": 9
       }
     },
     {
@@ -859,9 +859,9 @@
       "estimate": 10000,
       "review_denial": {
         "stage": "Tested",
-        "reason": "The test suite could not be executed because there is no Gradle wrapper (`gradlew`) committed to the repository, and the system `gradle` command is not available. Please commit the Gradle wrapper files (e.g., `gradlew`, `gradlew.bat`, and the `gradle/wrapper/` directory) and ensure there is at least one test.",
+        "reason": "The `gradlew` script does not have execute permissions (`Permission denied`), so the test suite cannot be run. Please run `git update-index --chmod=+x gradlew` and commit the change to give it execute permissions.",
         "by": "QA",
-        "review_count_at_denial": 7
+        "review_count_at_denial": 9
       }
     }
   ],
@@ -944,16 +944,16 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 2.6746432
+    "current_usd_spend": 3.1344536
   },
   "token_usage": {
-    "total": 3646271,
+    "total": 4704342,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
-      "DevTeam": 2222790,
+      "DevTeam": 2987512,
       "Architect": 449471,
-      "QA": 401975
+      "QA": 695324
     }
   },
   "story_estimates": {
@@ -1189,7 +1189,7 @@
   "sprint_approval_baseline": 4,
   "release_approval_baseline": 7,
   "dev_touch_baseline": 2,
-  "unadvanced_write_nudge_baseline": 5,
+  "unadvanced_write_nudge_baseline": 10,
   "sprint_files_touched": [
     "specs/stories/ST-2-Repeated-Story.md",
     "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job-via-OS-and-Utilization-Telemetry.md",
@@ -1268,9 +1268,13 @@
     "specs/requirements/ISSUE-0003-Streamline-ProductOwner-specification-drafting-and-backlog-grooming-sessions-with-strict-prompt-timeboxes-and-pre-structured-templates-to-keep-PO-token-usage-under-30%-of-sprint-budget..md",
     "specs/requirements/ISSUE-0009-Token-budget-limit-of-6,000,000-was-exceeded-(reaching-6,073,060-tokens)-with-ProductOwner-accounting-for-over-50%-of-token-usage-and-feature-implementation-taking-only-34%-of-total-tokens..md",
     "build.gradle.kts",
-    "src/main/kotlin/Main.kt"
+    "src/main/kotlin/Main.kt",
+    "gradle/wrapper/gradle-wrapper.properties",
+    "gradlew",
+    "gradlew.bat",
+    "src/test/kotlin/SampleTest.kt"
   ],
-  "source_content_change_count": 5,
+  "source_content_change_count": 10,
   "last_check_build": {
     "checked": null,
     "passing": null,
@@ -1278,12 +1282,12 @@
   },
   "last_pr_checks": {
     "passing": true,
-    "git_push_count_at_check": 8
+    "git_push_count_at_check": 9
   },
-  "git_push_count": 8,
+  "git_push_count": 9,
   "pr_review_calls": {
     "Architect": 7,
-    "QA": 7,
+    "QA": 9,
     "DevTeam": 2
   },
   "architect_review_baseline": 7,
