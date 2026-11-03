@@ -2,7 +2,7 @@
 
 - Story ID: US-0013
 - Title: Ingest GitHub Dependabot Alerts (Implementation)
-- Status: Draft
+- Status: Ready
 - Priority: Must
 - Owner: Scrum Team
 - Last Updated: 2026-11-03
@@ -18,9 +18,9 @@
 
 
 ## Test Approach
-Mock GitHub API responses and verify the mapping to the internal Finding model.
+Mock GitHub API and verify alert parsing and mapping.
 
 ### Tasks
-- Define internal Finding data model.
-- Implement GitHub auth and API request for Dependabot alerts.
-- Map GitHub response to Finding objects.
+- Connect to GitHub API
+- Fetch open Dependabot alerts
+- Map alerts to internal format
