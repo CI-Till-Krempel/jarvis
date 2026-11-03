@@ -389,11 +389,12 @@
       "id": "ISSUE-0011",
       "type": "Issue",
       "title": "Product Owner should automatically create and merge the sprint backlog PR immediately after sprint kickoff so DevTeam does not encounter start_feature_branch gate rejections.",
-      "status": "Draft",
+      "status": "Ready",
       "priority": "Must",
       "version": "Backlog (unplanned)",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
