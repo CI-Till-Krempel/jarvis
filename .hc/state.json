@@ -466,7 +466,14 @@
       "title": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.",
       "status": "Draft",
       "priority": "Must",
-      "version": "Backlog (unplanned)"
+      "version": "Backlog (unplanned)",
+      "acceptance_criteria": [
+        "Product Owner token usage is monitored continuously.",
+        "Strict prompts and templates are utilized to streamline specification drafting.",
+        "PO token usage is kept below 30% of the sprint budget."
+      ],
+      "owner": "ProductOwner",
+      "overview": "Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens. Streamline processes."
     },
     {
       "id": "EP-0005",
