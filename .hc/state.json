@@ -303,9 +303,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft"
+      "status": "Ready"
     },
     {
       "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
@@ -797,9 +798,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft",
+      "status": "Ready",
       "approach": "Extend github_client to create branches, commit files, and open a Pull Request populated with vulnerability and audit details.",
       "dod_checks": [
         "Code reviewed-ready",
