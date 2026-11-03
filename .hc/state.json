@@ -275,7 +275,10 @@
       ],
       "user_story": "As a Platform Lead, I want generated patches to be compiled and tested in an isolated sandbox before a PR is created, so that no broken code is suggested to developers.",
       "type": "User Story",
-      "id": "US-0016"
+      "id": "US-0016",
+      "depends_on": [
+        "US-0014"
+      ]
     },
     {
       "acceptance_criteria": [
