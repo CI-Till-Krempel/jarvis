@@ -401,7 +401,12 @@
       "stages_completed": [
         "Draft",
         "Ready"
-      ]
+      ],
+      "acceptance_criteria": [
+        "PO verifies creation and merging of sprint backlog PR right after kickoff.",
+        "DevTeam is unblocked from starting their branches."
+      ],
+      "overview": "Product Owner should automatically create and merge the sprint backlog PR immediately after sprint kickoff so DevTeam does not encounter start_feature_branch gate rejections."
     },
     {
       "id": "ISSUE-0008",
