@@ -90,7 +90,8 @@
         "Update the package manifest (e.g., package.json or requirements.txt) with the correct patched version.",
         "Ensure the generated diff only contains the necessary dependency update."
       ],
-      "epic_id": "EP-0002"
+      "epic_id": "EP-0002",
+      "version": "v0.1.0-MVP"
     },
     {
       "id": "US-0003",
