@@ -298,7 +298,11 @@
         "US-0016"
       ],
       "priority": "Must",
-      "version": "v0.1.0-MVP"
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft"
     },
     {
       "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
