@@ -452,7 +452,12 @@
       "stages_completed": [
         "Draft",
         "Ready"
-      ]
+      ],
+      "acceptance_criteria": [
+        "Dependency sequences are explicitly reviewed during sprint planning.",
+        "Downstream stories never have higher priority than prerequisite foundational stories."
+      ],
+      "overview": "Validate story dependency sequences during sprint planning to ensure prerequisite foundational stories always hold higher priority than downstream dependent stories."
     },
     {
       "id": "ISSUE-0003",
