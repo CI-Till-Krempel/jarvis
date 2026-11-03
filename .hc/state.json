@@ -324,9 +324,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft"
+      "status": "Ready"
     },
     {
       "id": "US-0012",
@@ -721,9 +722,10 @@
       "priority": "Should",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft",
+      "status": "Ready",
       "risks": "High complexity in correctly adapting API usage across different languages.",
       "tasks": [
         "Analyze codebase for usages of the upgraded dependency.",
