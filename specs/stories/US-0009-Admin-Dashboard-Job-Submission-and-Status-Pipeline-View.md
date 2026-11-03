@@ -16,6 +16,7 @@
 ## Notes
 
 - ⚠️ REVIEW DENIED at Tested by QA: The `gradlew` script does not have execute permissions (`Permission denied`), so the test suite cannot be run. Please run `git update-index --chmod=+x gradlew` and commit the change to give it execute permissions.
+- 🚫 BLOCKED (technical) - raised by QA: advance_story_stage('US-0009', 'Tested') has been rejected 3 times in a row for the same reason - most recently: Cannot mark 'US-0009' Tested - running the test suite found no tests actually ran (gradle could not be executed: [Errno 13] Permission denied: '/app/state_repo/gradlew'). A story can't be Tested with an empty or unrunnable test suite.
 
 ## Test Approach
 UI tests and mock Control Server responses.
