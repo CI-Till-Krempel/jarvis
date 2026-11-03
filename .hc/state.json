@@ -393,7 +393,10 @@
       "title": "Ensure newly filed process and retrospective tracking issues are assigned Won't or lowest priority at creation time so they do not block active sprint user stories in advance_story_stage.",
       "status": "Draft",
       "priority": "Must",
-      "version": "Backlog (unplanned)"
+      "version": "Backlog (unplanned)",
+      "stages_completed": [
+        "Draft"
+      ]
     },
     {
       "id": "ISSUE-0007",
