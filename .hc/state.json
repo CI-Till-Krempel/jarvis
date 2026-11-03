@@ -653,6 +653,39 @@
         "Implement GitHub auth and API request for Dependabot alerts.",
         "Map GitHub response to Finding objects."
       ]
+    },
+    {
+      "acceptance_criteria": [
+        "Parse the vulnerable package and version from the ingested alert.",
+        "Determine the patched version from vulnerability databases or GitHub Advisory.",
+        "Update the package manifest (e.g., package.json or requirements.txt) with the correct patched version.",
+        "Ensure the generated diff only contains the necessary dependency update."
+      ],
+      "epic_id": "EP-0002",
+      "user_story": "As an AppSec Engineer, I want the system to determine the safe upgrade version for a vulnerable dependency and update the package manifest.",
+      "title": "Generate Dependency Upgrade Patch (Implementation)",
+      "type": "User Story",
+      "id": "US-0014",
+      "priority": "Must",
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft",
+      "test_approach": "Unit test with mock requirements.txt/package.json files to ensure only target dependency is updated.",
+      "dod_checks": [
+        "Code reviewed-ready",
+        "Automated tests written and passing",
+        "Actual tokens spent logged"
+      ],
+      "tasks": [
+        "Parse vulnerable package from Finding.",
+        "Update manifest file with the patched version.",
+        "Ensure only the specific dependency is changed in the diff."
+      ],
+      "estimate": 4000,
+      "risks": "Difficulty in accurately parsing different package manifest formats.",
+      "approach": "Create a patch_generator module that parses a Finding, determines the safe version, and safely updates the project's dependency manifest."
     }
   ],
   "impediment_log": [
@@ -747,6 +780,9 @@
     },
     "US-0013": {
       "estimate": 3000
+    },
+    "US-0014": {
+      "estimate": 4000
     }
   },
   "sprint_report_kpis": {},
