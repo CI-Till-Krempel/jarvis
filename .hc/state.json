@@ -235,7 +235,11 @@
       "type": "User Story",
       "id": "US-0013",
       "priority": "Must",
-      "version": "v0.1.0-MVP"
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft"
     },
     {
       "acceptance_criteria": [
@@ -673,10 +677,10 @@
     "current_usd_spend": 0.4808444
   },
   "token_usage": {
-    "total": 216497,
+    "total": 253251,
     "agents": {
       "ScrumMaster": 27410,
-      "ProductOwner": 189087
+      "ProductOwner": 225841
     }
   },
   "story_estimates": {
