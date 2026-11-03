@@ -875,13 +875,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.1269932
+    "current_usd_spend": 0.16524060000000002
   },
   "token_usage": {
-    "total": 547555,
+    "total": 603094,
     "agents": {
-      "ScrumMaster": 79130,
-      "ProductOwner": 390269,
+      "ScrumMaster": 116028,
+      "ProductOwner": 408910,
       "DevTeam": 35335,
       "ScrumOrchestrator": 42821
     }
@@ -1333,6 +1333,15 @@
       "summary": "Release PR 'Release PR for Sprint 5' is waiting on a 'release' human approval.",
       "detail": "Cannot create a release PR - this interaction level requires a fresh 'release' human approval for this increment - call record_human_approval('release', ...) first (see docs/INTERACTION-LEVELS.md).",
       "created_at": "2026-11-03T13:37:35.939345+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 24,
+      "kind": "approval",
+      "summary": "Release PR needs merging",
+      "detail": "The previous sprint's release PR is open and needs to be merged into main before the new sprint can begin.",
+      "created_at": "2026-11-03T13:38:04.629552+00:00",
       "resolved": false,
       "resolved_at": null
     }
