@@ -351,7 +351,7 @@
         "Given a configured smart plug IP and credentials (Shelly Gen2 / Tapo P110), When the Control Server queries the smart plug API, Then it successfully reads instantaneous power (Watts) and cumulative energy (kWh).",
         "Given mapped smart plugs to node IDs, When power metrics are collected periodically, Then the Control Server records timestamped power telemetry in the node metrics store."
       ],
-      "version": "v1.0"
+      "version": "v0.2"
     },
     {
       "title": "Implement automated check or pre-push hook ensuring feature branches are rebased onto latest develop before creating pull requests to eliminate merge conflicts on specs/ROADMAP.md.",
@@ -1178,7 +1178,8 @@
     "specs/reports/RETRO-006.md",
     "specs/reports/STEERING-006.md",
     "specs/reports/TRANSCRIPT-006.md",
-    "specs/stories/US-0009-Admin-Dashboard-Job-Submission-and-Status-Pipeline-View.md"
+    "specs/stories/US-0009-Admin-Dashboard-Job-Submission-and-Status-Pipeline-View.md",
+    "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
