@@ -291,7 +291,10 @@
       "title": "Create GitHub PR with Fix and Audit Info (Implementation)",
       "epic_id": "EP-0001",
       "type": "User Story",
-      "id": "US-0017"
+      "id": "US-0017",
+      "depends_on": [
+        "US-0016"
+      ]
     },
     {
       "id": "EP-0005",
