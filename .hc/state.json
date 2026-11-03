@@ -68,14 +68,17 @@
     {
       "id": "US-0002",
       "type": "User Story",
-      "title": "Client Daemon Lifecycle & Metrics Collector",
+      "title": "Generate Dependency Upgrade Patch",
       "status": "Accepted",
       "priority": "Must",
-      "user_story": "As a cluster administrator, I want a lightweight daemon running on client laptops that collects system metrics, so that the Control Server knows each node's capacity and current load.",
+      "user_story": "As an AppSec Engineer, I want the system to determine the safe upgrade version for a vulnerable dependency and update the package manifest.",
       "acceptance_criteria": [
-        "Given a client machine (macOS or Windows), When the daemon service starts at boot, Then it runs as a low-footprint background process consuming <1% CPU and <50MB RAM in idle.",
-        "Given a running daemon, When collecting system telemetry, Then it samples CPU usage, RAM utilization, battery charge level, and temperature, transmitting them via heartbeat."
-      ]
+        "Parse the vulnerable package and version from the ingested alert.",
+        "Determine the patched version from vulnerability databases or GitHub Advisory.",
+        "Update the package manifest (e.g., package.json or requirements.txt) with the correct patched version.",
+        "Ensure the generated diff only contains the necessary dependency update."
+      ],
+      "epic_id": "EP-0002"
     },
     {
       "id": "US-0003",
@@ -788,7 +791,8 @@
     "specs/reports/STEERING-004.md",
     "specs/stories/EP-0001-GitHub-Integration-&-PR-Management-(MVP).md",
     "specs/stories/EP-0002-SCA-Vulnerability-Fix-Generation.md",
-    "specs/stories/EP-0003-Validation-&-Sandbox-Execution.md"
+    "specs/stories/EP-0003-Validation-&-Sandbox-Execution.md",
+    "specs/stories/US-0001-Ingest-GitHub-Dependabot-Alerts.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
