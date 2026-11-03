@@ -722,6 +722,42 @@
       ],
       "test_approach": "Use dummy code snippets and verify that the adapter applies correct modifications.",
       "estimate": 6000
+    },
+    {
+      "epic_id": "EP-0003",
+      "title": "Sandbox Validation of Fixes (Implementation)",
+      "acceptance_criteria": [
+        "Apply the generated patch in an ephemeral container/sandbox environment.",
+        "Execute project build commands (e.g., npm install, pip install).",
+        "Run existing test suites in the sandbox.",
+        "If the build or tests fail, capture the error log and return it to the fix generation agent for iteration."
+      ],
+      "user_story": "As a Platform Lead, I want generated patches to be compiled and tested in an isolated sandbox before a PR is created, so that no broken code is suggested to developers.",
+      "type": "User Story",
+      "id": "US-0016",
+      "depends_on": [
+        "US-0014"
+      ],
+      "priority": "Must",
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft",
+      "test_approach": "Integration test executing a lightweight build/test command (e.g. pytest on a dummy project) locally.",
+      "dod_checks": [
+        "Code reviewed-ready",
+        "Automated tests written and passing",
+        "Actual tokens spent logged"
+      ],
+      "tasks": [
+        "Apply the generated patch in a sandbox environment.",
+        "Run build/test commands.",
+        "Capture logs and determine success/failure."
+      ],
+      "risks": "Sandbox environment setup might fail or leak host state.",
+      "approach": "Create a sandbox module to run the project's build and test commands against the patched codebase in an isolated manner.",
+      "estimate": 5000
     }
   ],
   "impediment_log": [
@@ -822,6 +858,9 @@
     },
     "US-0015": {
       "estimate": 6000
+    },
+    "US-0016": {
+      "estimate": 5000
     }
   },
   "sprint_report_kpis": {},
