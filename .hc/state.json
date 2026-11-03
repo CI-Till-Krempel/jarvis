@@ -452,7 +452,7 @@
       "owner": "ProductOwner",
       "type": "Issue",
       "id": "ISSUE-0014",
-      "status": "Draft",
+      "status": "Ready",
       "priority": "Must",
       "version": "Backlog (unplanned)",
       "acceptance_criteria": [
@@ -460,7 +460,8 @@
         "The checklist is applied before grooming sessions to ensure stories meet the criteria."
       ],
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
@@ -938,13 +939,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.69216
+    "current_usd_spend": 0.7707064
   },
   "token_usage": {
-    "total": 168766,
+    "total": 211950,
     "agents": {
       "ScrumMaster": 42468,
-      "ProductOwner": 126298
+      "ProductOwner": 169482
     }
   },
   "story_estimates": {
