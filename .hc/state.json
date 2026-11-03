@@ -872,6 +872,14 @@
       "status": "open",
       "category": "human",
       "sprint_number": 3
+    },
+    {
+      "description": "The gradlew script was committed without executable permissions, causing the test suite execution to fail during the Tested gate. DevTeam needs to ensure executable permissions are set before pushing wrapper scripts.",
+      "owner": "DevTeam",
+      "status": "open",
+      "category": "technical",
+      "sprint_number": 6,
+      "recurs_since_sprint": null
     }
   ],
   "retro_actions": [
