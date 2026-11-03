@@ -60,9 +60,10 @@
     {
       "id": "EP-0003",
       "type": "Epic",
-      "title": "Containerized Job Execution",
+      "title": "Validation & Sandbox Execution",
       "status": "Open",
-      "priority": "Must"
+      "priority": "Must",
+      "description": "Run the generated code changes in an ephemeral sandbox environment to ensure the project still builds, tests pass, and the security finding is actually resolved before suggesting the PR."
     },
     {
       "id": "US-0002",
@@ -784,7 +785,8 @@
     "specs/reports/SPRINT-REPORT-013.md",
     "specs/reports/RETRO-005.md",
     "specs/reports/STEERING-004.md",
-    "specs/stories/EP-0001-GitHub-Integration-&-PR-Management-(MVP).md"
+    "specs/stories/EP-0001-GitHub-Integration-&-PR-Management-(MVP).md",
+    "specs/stories/EP-0002-SCA-Vulnerability-Fix-Generation.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
