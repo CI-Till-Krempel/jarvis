@@ -27,13 +27,19 @@
     {
       "id": "US-0004",
       "type": "User Story",
-      "title": "Docker Container Job Runner on Client Daemon",
+      "title": "Sandbox Validation of Fixes",
       "status": "Accepted",
       "priority": "Must",
-      "user_story": "As a cluster operator, I want client daemons to execute jobs in isolated Docker containers with specified CPU and memory constraints, so that tasks run securely without altering the host system.",
+      "user_story": "As a Platform Lead, I want generated patches to be compiled and tested in an isolated sandbox before a PR is created, so that no broken code is suggested to developers.",
       "acceptance_criteria": [
-        "Given an assigned job specification with container image, environment, and command, When the daemon initiates execution, Then it runs the container via the local Docker daemon with strict memory and CPU limits.",
-        "Given a containerized job execution, When the job completes or fails, Then the daemon captures exit codes, stdout/stderr logs, and reports the execution result back to the Control Server."
+        "Apply the generated patch in an ephemeral container/sandbox environment.",
+        "Execute project build commands (e.g., npm install, pip install).",
+        "Run existing test suites in the sandbox.",
+        "If the build or tests fail, capture the error log and return it to the fix generation agent for iteration."
+      ],
+      "epic_id": "EP-0003",
+      "depends_on": [
+        "US-0002"
       ]
     },
     {
@@ -799,7 +805,8 @@
     "specs/stories/EP-0002-SCA-Vulnerability-Fix-Generation.md",
     "specs/stories/EP-0003-Validation-&-Sandbox-Execution.md",
     "specs/stories/US-0001-Ingest-GitHub-Dependabot-Alerts.md",
-    "specs/stories/US-0002-Generate-Dependency-Upgrade-Patch.md"
+    "specs/stories/US-0002-Generate-Dependency-Upgrade-Patch.md",
+    "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
