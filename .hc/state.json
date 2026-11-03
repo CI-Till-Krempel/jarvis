@@ -20,7 +20,8 @@
       "depends_on": [
         "US-0004"
       ],
-      "epic_id": "EP-0001"
+      "epic_id": "EP-0001",
+      "version": "v0.1.0-MVP"
     },
     {
       "id": "EP-0001",
