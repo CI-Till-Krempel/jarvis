@@ -412,7 +412,7 @@
       "status": "Draft",
       "priority": "Must",
       "notes": "Resolved and closed: PR #15 was merged and subsequent sprints progressed cleanly.",
-      "version": "Backlog (unplanned)"
+      "version": "v1.0"
     },
     {
       "id": "EP-0005",
