@@ -253,22 +253,6 @@
       "version": "v0.1.0-MVP"
     },
     {
-      "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
-      "acceptance_criteria": [
-        "Analyze the codebase for usages of the upgraded dependency.",
-        "Identify breaking changes between the old and new version of the dependency.",
-        "Modify the calling code to match the new API if necessary.",
-        "Include these code changes alongside the dependency version bump in the generated patch."
-      ],
-      "user_story": "As a Developer, I want the automated fix to adapt my code to breaking API changes introduced by the dependency upgrade, so that the PR doesn't break the build.",
-      "epic_id": "EP-0002",
-      "type": "User Story",
-      "id": "US-0015",
-      "depends_on": [
-        "US-0014"
-      ]
-    },
-    {
       "epic_id": "EP-0003",
       "title": "Sandbox Validation of Fixes (Implementation)",
       "acceptance_criteria": [
@@ -299,6 +283,23 @@
       "depends_on": [
         "US-0016"
       ]
+    },
+    {
+      "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
+      "acceptance_criteria": [
+        "Analyze the codebase for usages of the upgraded dependency.",
+        "Identify breaking changes between the old and new version of the dependency.",
+        "Modify the calling code to match the new API if necessary.",
+        "Include these code changes alongside the dependency version bump in the generated patch."
+      ],
+      "user_story": "As a Developer, I want the automated fix to adapt my code to breaking API changes introduced by the dependency upgrade, so that the PR doesn't break the build.",
+      "epic_id": "EP-0002",
+      "type": "User Story",
+      "id": "US-0015",
+      "depends_on": [
+        "US-0014"
+      ],
+      "priority": "Should"
     },
     {
       "id": "EP-0005",
