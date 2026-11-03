@@ -15,7 +15,7 @@
 
 ## Notes
 
-- ⚠️ REVIEW DENIED at Tested by QA: The test suite could not be executed because there is no Gradle wrapper (`gradlew`) committed to the repository, and the system `gradle` command is not available. Please commit the Gradle wrapper files (e.g., `gradlew`, `gradlew.bat`, and the `gradle/wrapper/` directory) and ensure there is at least one test.
+- ⚠️ REVIEW DENIED at Tested by QA: The `gradlew` script does not have execute permissions (`Permission denied`), so the test suite cannot be run. Please run `git update-index --chmod=+x gradlew` and commit the change to give it execute permissions.
 
 ## Test Approach
 UI tests and mock Control Server responses.
