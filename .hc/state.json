@@ -234,7 +234,8 @@
       "epic_id": "EP-0001",
       "type": "User Story",
       "id": "US-0013",
-      "priority": "Must"
+      "priority": "Must",
+      "version": "v0.1.0-MVP"
     },
     {
       "acceptance_criteria": [
