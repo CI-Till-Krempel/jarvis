@@ -19,9 +19,10 @@
     {
       "id": "EP-0001",
       "type": "Epic",
-      "title": "Client Daemon & Power Management",
+      "title": "GitHub Integration & PR Management (MVP)",
       "status": "Open",
-      "priority": "Must"
+      "priority": "Must",
+      "description": "Implement the base integration with GitHub to ingest findings (e.g. Dependabot, CodeQL SARIF) and create Pull Requests for generated fixes. This covers Autonomy Levels L0 (observe) and L1 (suggest via PR)."
     },
     {
       "id": "US-0004",
@@ -560,10 +561,10 @@
     "current_usd_spend": 0.1246076
   },
   "token_usage": {
-    "total": 820403,
+    "total": 842950,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 748245,
+      "ProductOwner": 770792,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
