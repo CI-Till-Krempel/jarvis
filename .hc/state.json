@@ -280,9 +280,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft"
+      "status": "Ready"
     },
     {
       "acceptance_criteria": [
@@ -759,9 +760,10 @@
       "priority": "Must",
       "version": "v0.1.0-MVP",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ],
-      "status": "Draft",
+      "status": "Ready",
       "test_approach": "Integration test executing a lightweight build/test command (e.g. pytest on a dummy project) locally.",
       "dod_checks": [
         "Code reviewed-ready",
