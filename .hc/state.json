@@ -469,7 +469,13 @@
       "stages_completed": [
         "Draft",
         "Ready"
-      ]
+      ],
+      "acceptance_criteria": [
+        "Strict prompt timeboxes are established.",
+        "Pre-structured templates are utilized.",
+        "Token budget is effectively managed."
+      ],
+      "overview": "Streamline ProductOwner specification drafting and backlog grooming sessions with strict prompt timeboxes and pre-structured templates to keep PO token usage under 30% of sprint budget."
     },
     {
       "title": "Establish a structured story readiness checklist between Product Owner and Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
