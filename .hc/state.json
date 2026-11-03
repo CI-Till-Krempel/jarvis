@@ -284,7 +284,8 @@
       "id": "US-0017",
       "depends_on": [
         "US-0016"
-      ]
+      ],
+      "priority": "Must"
     },
     {
       "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
