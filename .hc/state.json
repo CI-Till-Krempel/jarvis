@@ -267,7 +267,8 @@
       "depends_on": [
         "US-0014"
       ],
-      "priority": "Must"
+      "priority": "Must",
+      "version": "v0.1.0-MVP"
     },
     {
       "acceptance_criteria": [
