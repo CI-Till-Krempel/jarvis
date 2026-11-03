@@ -213,7 +213,7 @@
       "id": "US-0009",
       "type": "User Story",
       "title": "Admin Dashboard Job Submission and Status Pipeline View",
-      "status": "Draft",
+      "status": "Ready",
       "priority": "Must",
       "user_story": "As an IT administrator, I want a Compose for Desktop UI to submit batch job configurations and view active job progress in real time, so that I can manage and monitor cluster workload execution.",
       "acceptance_criteria": [
@@ -223,7 +223,8 @@
       "version": "v0.2",
       "notes": "Allows operators to submit jobs with governance constraints and monitor real-time execution alongside energy and cost ROI.",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
@@ -912,13 +913,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 0.4860588
+    "current_usd_spend": 0.52211
   },
   "token_usage": {
-    "total": 1063402,
+    "total": 1110136,
     "agents": {
       "ScrumMaster": 153978,
-      "ProductOwner": 781412,
+      "ProductOwner": 828146,
       "DevTeam": 35335,
       "ScrumOrchestrator": 92677
     }
