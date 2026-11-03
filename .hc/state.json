@@ -366,6 +366,14 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0011",
+      "type": "Issue",
+      "title": "Product Owner should automatically create and merge the sprint backlog PR immediately after sprint kickoff so DevTeam does not encounter start_feature_branch gate rejections.",
+      "status": "Draft",
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -385,14 +393,6 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
-    },
-    {
-      "id": "ISSUE-0011",
-      "type": "Issue",
-      "title": "Product Owner should automatically create and merge the sprint backlog PR immediately after sprint kickoff so DevTeam does not encounter start_feature_branch gate rejections.",
-      "status": "Draft",
-      "priority": "Won't",
-      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0008",
