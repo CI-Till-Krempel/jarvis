@@ -52,9 +52,10 @@
     {
       "id": "EP-0002",
       "type": "Epic",
-      "title": "Control Server & Node Orchestration",
+      "title": "SCA Vulnerability Fix Generation",
       "status": "Open",
-      "priority": "Must"
+      "priority": "Must",
+      "description": "Core logic for automatically generating fixes for Software Composition Analysis (SCA) findings. This includes upgrading the vulnerable dependency and automatically adjusting any breaking API changes in the consuming codebase."
     },
     {
       "id": "EP-0003",
@@ -782,7 +783,8 @@
     "specs/reports/TRANSCRIPT-012.md",
     "specs/reports/SPRINT-REPORT-013.md",
     "specs/reports/RETRO-005.md",
-    "specs/reports/STEERING-004.md"
+    "specs/reports/STEERING-004.md",
+    "specs/stories/EP-0001-GitHub-Integration-&-PR-Management-(MVP).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
