@@ -259,7 +259,10 @@
       "user_story": "As a Developer, I want the automated fix to adapt my code to breaking API changes introduced by the dependency upgrade, so that the PR doesn't break the build.",
       "epic_id": "EP-0002",
       "type": "User Story",
-      "id": "US-0015"
+      "id": "US-0015",
+      "depends_on": [
+        "US-0014"
+      ]
     },
     {
       "epic_id": "EP-0003",
@@ -651,13 +654,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.426881
+    "current_usd_spend": 0.4515698
   },
   "token_usage": {
-    "total": 146593,
+    "total": 181062,
     "agents": {
       "ScrumMaster": 27410,
-      "ProductOwner": 119183
+      "ProductOwner": 153652
     }
   },
   "story_estimates": {
@@ -812,7 +815,8 @@
     "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md",
     "specs/stories/US-0014-Generate-Dependency-Upgrade-Patch-(Implementation).md",
     "specs/stories/US-0015-Handle-Breaking-API-Changes-in-SCA-Fixes-(Implementation).md",
-    "specs/stories/US-0016-Sandbox-Validation-of-Fixes-(Implementation).md"
+    "specs/stories/US-0016-Sandbox-Validation-of-Fixes-(Implementation).md",
+    "specs/stories/US-0017-Create-GitHub-PR-with-Fix-and-Audit-Info-(Implementation).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
