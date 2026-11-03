@@ -484,9 +484,9 @@
   "definition_of_done": [],
   "sprint_goal": "Implement the MVP capabilities for the Jarvis security tool: ingest GitHub Dependabot alerts, generate dependency upgrade patches with API adaptation, validate fixes in a sandbox, and create Pull Requests.",
   "sprint_number": 5,
-  "sprint_backlog_pr_sprint": 3,
+  "sprint_backlog_pr_sprint": 0,
   "sprint_backlog_pr_opened": true,
-  "planning_output_commit_count": 18,
+  "planning_output_commit_count": 19,
   "sprint_backlog_pr_content_baseline": 10,
   "sprint_backlog": [
     {
@@ -878,10 +878,10 @@
     "current_usd_spend": 0.1269932
   },
   "token_usage": {
-    "total": 529292,
+    "total": 547555,
     "agents": {
       "ScrumMaster": 79130,
-      "ProductOwner": 372006,
+      "ProductOwner": 390269,
       "DevTeam": 35335,
       "ScrumOrchestrator": 42821
     }
@@ -1031,7 +1031,7 @@
     }
   ],
   "sprint_approval_baseline": 4,
-  "release_approval_baseline": 6,
+  "release_approval_baseline": 7,
   "dev_touch_baseline": 14,
   "unadvanced_write_nudge_baseline": 0,
   "sprint_files_touched": [
@@ -1097,7 +1097,11 @@
     "specs/stories/US-0017-Create-GitHub-PR-with-Fix-and-Audit-Info-(Implementation).md",
     "specs/reports/SPRINT-REPORT-005.md",
     "specs/reports/STEERING-005.md",
-    "specs/reports/TRANSCRIPT-005.md"
+    "specs/reports/TRANSCRIPT-005.md",
+    "specs/reports/SPRINT-REPORT-006.md",
+    "specs/reports/RETRO-006.md",
+    "specs/reports/STEERING-006.md",
+    "specs/reports/TRANSCRIPT-006.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
@@ -1123,7 +1127,7 @@
     "QA": 2,
     "DevTeam": 1
   },
-  "sprint_report_pending_release": true,
+  "sprint_report_pending_release": false,
   "blocking_interactions": [
     {
       "id": 1,
