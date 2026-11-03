@@ -439,7 +439,7 @@
       "notes": "Resolved and closed. PR #22 was superseded by clean rebase PR #25, which merged successfully into develop and was included in release v0.1.5 (PR #26). PR #22 was closed by stakeholder.",
       "type": "Issue",
       "status": "Draft",
-      "version": "v1.0"
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "EP-0005",
@@ -1185,7 +1185,8 @@
     "specs/requirements/ISSUE-0008-Ensure-newly-filed-process-and-retrospective-tracking-issues-are-assigned-Won't-or-lowest-priority-at-creation-time-so-they-do-not-block-active-sprint-user-stories-in-advance_story_stage..md",
     "specs/requirements/ISSUE-0007-Backlog-priority-order-conflict:-US-0004-was-marked-'Must'-while-depending-on-prerequisite-US-0002,-causing-advance_story_stage-to-reject-advancing-US-0002-to-Implemented-until-PO-reprioritized-US-0004..md",
     "specs/requirements/ISSUE-0005-Validate-story-dependency-sequences-during-sprint-planning-to-ensure-prerequisite-foundational-stories-always-hold-higher-priority-than-downstream-dependent-stories..md",
-    "specs/requirements/ISSUE-0003-Streamline-ProductOwner-specification-drafting-and-backlog-grooming-sessions-with-strict-prompt-timeboxes-and-pre-structured-templates-to-keep-PO-token-usage-under-30%-of-sprint-budget..md"
+    "specs/requirements/ISSUE-0003-Streamline-ProductOwner-specification-drafting-and-backlog-grooming-sessions-with-strict-prompt-timeboxes-and-pre-structured-templates-to-keep-PO-token-usage-under-30%-of-sprint-budget..md",
+    "specs/requirements/ISSUE-0009-Token-budget-limit-of-6,000,000-was-exceeded-(reaching-6,073,060-tokens)-with-ProductOwner-accounting-for-over-50%-of-token-usage-and-feature-implementation-taking-only-34%-of-total-tokens..md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
