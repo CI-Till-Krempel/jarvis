@@ -266,7 +266,8 @@
       "id": "US-0016",
       "depends_on": [
         "US-0014"
-      ]
+      ],
+      "priority": "Must"
     },
     {
       "acceptance_criteria": [
