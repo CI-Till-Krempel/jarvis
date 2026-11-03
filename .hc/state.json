@@ -124,15 +124,16 @@
     {
       "id": "US-0001",
       "type": "User Story",
-      "title": "Control Server Node Registration & Heartbeat API",
+      "title": "Ingest GitHub Dependabot Alerts",
       "status": "Accepted",
       "priority": "Must",
-      "user_story": "As a Control Server administrator, I want an API for node registration and periodic heartbeat telemetry, so that the server maintains an accurate real-time inventory of cluster nodes and their health.",
+      "user_story": "As a security tool, I want to ingest Dependabot alerts from a GitHub repository so that I can automatically triage and fix vulnerable dependencies.",
       "acceptance_criteria": [
-        "Given a running Ktor Control Server, When a client daemon sends a registration POST request with node ID, OS type, and hardware specs, Then the server stores the node and responds with 200 OK and registration confirmation.",
-        "Given a registered node, When the node sends a periodic heartbeat with CPU/RAM metrics, Then the server updates the node's last-seen timestamp and metric cache.",
-        "Given a registered node that stops sending heartbeats, When the timeout threshold (60 seconds) expires, Then the server marks the node status as Offline."
-      ]
+        "Connect to GitHub API using App/Token authentication.",
+        "Fetch open Dependabot alerts for a specified repository.",
+        "Map the alerts into an internal format suitable for the Triage Queue."
+      ],
+      "epic_id": "EP-0001"
     },
     {
       "id": "US-0008",
@@ -560,13 +561,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.1246076
+    "current_usd_spend": 0.1532558
   },
   "token_usage": {
-    "total": 842950,
+    "total": 867381,
     "agents": {
       "ScrumMaster": 33706,
-      "ProductOwner": 770792,
+      "ProductOwner": 795223,
       "DevTeam": 5091289,
       "Architect": 893100,
       "QA": 1122355,
@@ -786,7 +787,8 @@
     "specs/reports/RETRO-005.md",
     "specs/reports/STEERING-004.md",
     "specs/stories/EP-0001-GitHub-Integration-&-PR-Management-(MVP).md",
-    "specs/stories/EP-0002-SCA-Vulnerability-Fix-Generation.md"
+    "specs/stories/EP-0002-SCA-Vulnerability-Fix-Generation.md",
+    "specs/stories/EP-0003-Validation-&-Sandbox-Execution.md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
