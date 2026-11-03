@@ -379,10 +379,11 @@
       "notes": "Categorized as steering change: A process and behavioral steering adjustment for DevTeam to enforce pre-push rebase checks against develop, preventing branch divergence and merge conflicts on specs/ROADMAP.md.",
       "priority": "Must",
       "category": "steering",
-      "status": "Draft",
+      "status": "Ready",
       "version": "Backlog (unplanned)",
       "stages_completed": [
-        "Draft"
+        "Draft",
+        "Ready"
       ]
     },
     {
