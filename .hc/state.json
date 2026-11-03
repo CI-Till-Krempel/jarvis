@@ -384,6 +384,11 @@
       "stages_completed": [
         "Draft",
         "Ready"
+      ],
+      "acceptance_criteria": [
+        "Pre-push hook is implemented and tested locally.",
+        "Hook verifies that the feature branch is rebased on latest develop.",
+        "Documentation is provided on how to enable the hook."
       ]
     },
     {
@@ -943,10 +948,10 @@
     "current_usd_spend": 0.7707064
   },
   "token_usage": {
-    "total": 211950,
+    "total": 256527,
     "agents": {
       "ScrumMaster": 42468,
-      "ProductOwner": 169482
+      "ProductOwner": 214059
     }
   },
   "story_estimates": {
