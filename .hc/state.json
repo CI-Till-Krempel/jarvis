@@ -863,7 +863,7 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.4808444
+    "current_usd_spend": 0.5465679999999999
   },
   "token_usage": {
     "total": 326025,
