@@ -354,6 +354,18 @@
       "version": "v1.0"
     },
     {
+      "title": "Implement automated check or pre-push hook ensuring feature branches are rebased onto latest develop before creating pull requests to eliminate merge conflicts on specs/ROADMAP.md.",
+      "overview": "Implement automated check or pre-push hook ensuring feature branches are rebased onto latest develop before creating pull requests to eliminate merge conflicts on specs/ROADMAP.md.",
+      "owner": "DevTeam",
+      "type": "Issue",
+      "id": "ISSUE-0015",
+      "notes": "Categorized as steering change: A process and behavioral steering adjustment for DevTeam to enforce pre-push rebase checks against develop, preventing branch divergence and merge conflicts on specs/ROADMAP.md.",
+      "priority": "Must",
+      "category": "steering",
+      "status": "Draft",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -366,18 +378,6 @@
       "title": "Distributed LLM & Ray Inference Engine",
       "status": "Open",
       "priority": "Should"
-    },
-    {
-      "title": "Implement automated check or pre-push hook ensuring feature branches are rebased onto latest develop before creating pull requests to eliminate merge conflicts on specs/ROADMAP.md.",
-      "overview": "Implement automated check or pre-push hook ensuring feature branches are rebased onto latest develop before creating pull requests to eliminate merge conflicts on specs/ROADMAP.md.",
-      "owner": "DevTeam",
-      "type": "Issue",
-      "id": "ISSUE-0015",
-      "notes": "Categorized as steering change: A process and behavioral steering adjustment for DevTeam to enforce pre-push rebase checks against develop, preventing branch divergence and merge conflicts on specs/ROADMAP.md.",
-      "priority": "Could",
-      "category": "steering",
-      "status": "Draft",
-      "version": "Backlog (unplanned)"
     },
     {
       "id": "EP-0006",
