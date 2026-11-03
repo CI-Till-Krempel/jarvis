@@ -276,7 +276,11 @@
         "US-0014"
       ],
       "priority": "Must",
-      "version": "v0.1.0-MVP"
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft"
     },
     {
       "acceptance_criteria": [
