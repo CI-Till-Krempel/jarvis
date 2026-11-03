@@ -395,7 +395,7 @@
       "title": "Validate story dependency sequences during sprint planning to ensure prerequisite foundational stories always hold higher priority than downstream dependent stories.",
       "status": "Draft",
       "priority": "Must",
-      "version": "v1.0"
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0003",
@@ -1182,7 +1182,8 @@
     "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job.md",
     "specs/stories/US-0011-Smart-Plug-Telemetry-Collector-for-Shelly-and-Tapo.md",
     "specs/requirements/ISSUE-0011-Product-Owner-should-automatically-create-and-merge-the-sprint-backlog-PR-immediately-after-sprint-kickoff-so-DevTeam-does-not-encounter-start_feature_branch-gate-rejections..md",
-    "specs/requirements/ISSUE-0008-Ensure-newly-filed-process-and-retrospective-tracking-issues-are-assigned-Won't-or-lowest-priority-at-creation-time-so-they-do-not-block-active-sprint-user-stories-in-advance_story_stage..md"
+    "specs/requirements/ISSUE-0008-Ensure-newly-filed-process-and-retrospective-tracking-issues-are-assigned-Won't-or-lowest-priority-at-creation-time-so-they-do-not-block-active-sprint-user-stories-in-advance_story_stage..md",
+    "specs/requirements/ISSUE-0007-Backlog-priority-order-conflict:-US-0004-was-marked-'Must'-while-depending-on-prerequisite-US-0002,-causing-advance_story_stage-to-reject-advancing-US-0002-to-Implemented-until-PO-reprioritized-US-0004..md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
