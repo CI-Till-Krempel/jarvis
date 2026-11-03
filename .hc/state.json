@@ -367,8 +367,8 @@
     }
   ],
   "definition_of_done": [],
-  "sprint_goal": "Implement and deliver US-0009 (Admin Dashboard Job Submission and Status Pipeline View) to enable cluster administrators to submit jobs and monitor execution status across the pipeline.",
-  "sprint_number": 4,
+  "sprint_goal": "Implement the MVP capabilities for the Jarvis security tool: ingest GitHub Dependabot alerts, generate dependency upgrade patches with API adaptation, validate fixes in a sandbox, and create Pull Requests.",
+  "sprint_number": 5,
   "sprint_backlog_pr_sprint": 3,
   "sprint_backlog_pr_opened": true,
   "planning_output_commit_count": 16,
@@ -587,19 +587,11 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.2091696
+    "current_usd_spend": 0.2441662
   },
   "token_usage": {
-    "total": 949947,
-    "agents": {
-      "ScrumMaster": 33706,
-      "ProductOwner": 877789,
-      "DevTeam": 5091289,
-      "Architect": 893100,
-      "QA": 1122355,
-      "ScrumOrchestrator": 405948,
-      "QualityGuardian": 14245
-    }
+    "total": 0,
+    "agents": {}
   },
   "story_estimates": {
     "US-0010": {
@@ -615,77 +607,7 @@
       "actual": 24000
     }
   },
-  "sprint_report_kpis": {
-    "team_effectiveness": {
-      "say_do_ratio": 1,
-      "commitment_reliability_note": "not available - no estimate-accuracy tracking exists yet"
-    },
-    "maintainability": {
-      "tests_run": 1,
-      "code_complexity": 2.91660319878142,
-      "tests_failed": 1,
-      "code_complexity_available": true,
-      "test_coverage_available": false,
-      "test_coverage_note": "coverage summary not found in pytest output (exit code 2) - last output:\nt\n    ???\n<frozen importlib._bootstrap>:1176: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:690: in _load_unlocked\n    ???\n/usr/local/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module\n    exec(co, module.__dict__)\nhorseless-carriage/agents/scrum_team/tests/conftest.py:60: in <module>\n    from agents.scrum_team.tools.base import _configured_repo_root as _real_configured_repo_root\nE   ModuleNotFoundError: No module named 'agents'\n=========================== short test summary info ============================\nERROR horseless-carriage/agents/scrum_team/tests - ModuleNotFoundError: No mo...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.55s"
-    },
-    "security": {
-      "vulnerability_scan_available": true,
-      "vulnerability_scan_results": {
-        "high": 0,
-        "low": 1405,
-        "critical": 0,
-        "medium": 18
-      }
-    },
-    "result_quality": {
-      "defect_escape_rate_note": "not available - no defect/bug-lifecycle tracking exists yet",
-      "customer_satisfaction_note": "not available - no user/customer satisfaction survey exists yet"
-    },
-    "prompt_context_usage": {
-      "DevTeam": {
-        "usage_percent": 0.45,
-        "prompt_tokens": 4676,
-        "context_window_tokens": 1048576,
-        "available": true,
-        "model": "scrum-dev"
-      },
-      "Architect": {
-        "available": true,
-        "model": "scrum-arch",
-        "context_window_tokens": 1048576,
-        "usage_percent": 0.32,
-        "prompt_tokens": 3308
-      },
-      "QA": {
-        "model": "scrum-qa",
-        "prompt_tokens": 2642,
-        "usage_percent": 0.25,
-        "available": true,
-        "context_window_tokens": 1048576
-      },
-      "ScrumMaster": {
-        "usage_percent": 0.56,
-        "model": "scrum-sm",
-        "context_window_tokens": 1048576,
-        "prompt_tokens": 5905,
-        "available": true
-      },
-      "ProductOwner": {
-        "available": true,
-        "model": "scrum-po",
-        "prompt_tokens": 5615,
-        "context_window_tokens": 1048576,
-        "usage_percent": 0.54
-      },
-      "ScrumOrchestrator": {
-        "context_window_tokens": 1048576,
-        "usage_percent": 0.74,
-        "prompt_tokens": 7751,
-        "model": "scrum-orchestrator",
-        "available": true
-      }
-    }
-  },
+  "sprint_report_kpis": {},
   "kpi_update_count": 5,
   "kpi_baseline": 5,
   "backlog_scope_complete": true,
