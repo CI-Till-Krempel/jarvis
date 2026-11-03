@@ -228,7 +228,12 @@
         "Implemented",
         "Reviewed"
       ],
-      "review_denial": null
+      "review_denial": {
+        "stage": "Tested",
+        "reason": "The HTTP calls in Main.kt for submitting and polling jobs are commented out (`// client.get` and `// setBody(newJob)`). This means the implementation does not actually satisfy the acceptance criteria of communicating with the Control Server. Please implement the actual API calls instead of leaving them commented out.",
+        "by": "QA",
+        "review_count_at_denial": 5
+      }
     },
     {
       "title": "Ingest GitHub Dependabot Alerts (Implementation)",
@@ -580,7 +585,7 @@
   "sprint_number": 6,
   "sprint_backlog_pr_sprint": 6,
   "sprint_backlog_pr_opened": false,
-  "planning_output_commit_count": 22,
+  "planning_output_commit_count": 23,
   "sprint_backlog_pr_content_baseline": 21,
   "sprint_backlog": [
     {
@@ -852,7 +857,12 @@
         "Connect UI to Control Server"
       ],
       "estimate": 10000,
-      "review_denial": null
+      "review_denial": {
+        "stage": "Tested",
+        "reason": "The HTTP calls in Main.kt for submitting and polling jobs are commented out (`// client.get` and `// setBody(newJob)`). This means the implementation does not actually satisfy the acceptance criteria of communicating with the Control Server. Please implement the actual API calls instead of leaving them commented out.",
+        "by": "QA",
+        "review_count_at_denial": 5
+      }
     }
   ],
   "impediment_log": [
@@ -934,15 +944,16 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 2.1709490000000002
+    "current_usd_spend": 2.3699936
   },
   "token_usage": {
-    "total": 2748247,
+    "total": 2946062,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
       "DevTeam": 1794278,
-      "Architect": 381934
+      "Architect": 449471,
+      "QA": 130278
     }
   },
   "story_estimates": {
@@ -1261,6 +1272,8 @@
   ],
   "source_content_change_count": 4,
   "last_check_build": {
+    "checked": null,
+    "passing": null,
     "manifest_write_count_at_check": 0
   },
   "last_pr_checks": {
