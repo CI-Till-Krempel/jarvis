@@ -213,7 +213,7 @@
       "id": "US-0009",
       "type": "User Story",
       "title": "Admin Dashboard Job Submission and Status Pipeline View",
-      "status": "Ready",
+      "status": "Implemented",
       "priority": "Must",
       "user_story": "As an IT administrator, I want a Compose for Desktop UI to submit batch job configurations and view active job progress in real time, so that I can manage and monitor cluster workload execution.",
       "acceptance_criteria": [
@@ -224,7 +224,8 @@
       "notes": "Allows operators to submit jobs with governance constraints and monitor real-time execution alongside energy and cost ROI.",
       "stages_completed": [
         "Draft",
-        "Ready"
+        "Ready",
+        "Implemented"
       ]
     },
     {
@@ -819,7 +820,7 @@
       "id": "US-0009",
       "type": "User Story",
       "title": "Admin Dashboard Job Submission and Status Pipeline View",
-      "status": "Ready",
+      "status": "Implemented",
       "priority": "Must",
       "user_story": "As an IT administrator, I want a Compose for Desktop UI to submit batch job configurations and view active job progress in real time, so that I can manage and monitor cluster workload execution.",
       "acceptance_criteria": [
@@ -830,7 +831,8 @@
       "notes": "Allows operators to submit jobs with governance constraints and monitor real-time execution alongside energy and cost ROI.",
       "stages_completed": [
         "Draft",
-        "Ready"
+        "Ready",
+        "Implemented"
       ],
       "code_files": [],
       "dod_checks": [
@@ -916,20 +918,26 @@
       "decision": "Preserved the pre-reset local tip (5274cbb4) as branch 'rescued-develop-5274cbb4' (pushed) before develop was reset to origin/develop.",
       "rationale": "SPEC-ISSUE-0050: a real merge conflict between local-only progress (e.g. a story's own stage-transition state) and origin's own newer commits couldn't be auto-resolved safely - see the rescue branch to recover it by hand.",
       "owner": "system"
+    },
+    {
+      "title": "US-0009 marked Implemented without a new source touch",
+      "decision": "Accepted via implemented_via_earlier_work instead of requiring a new write_file call",
+      "rationale": "Wrote src/main/kotlin/Main.kt and build.gradle.kts just before this check.",
+      "owner": "DevTeam"
     }
   ],
   "sprint_report": "",
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 1.6346664
+    "current_usd_spend": 1.6699224000000001
   },
   "token_usage": {
-    "total": 1515490,
+    "total": 1640471,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
-      "DevTeam": 943455
+      "DevTeam": 1068436
     }
   },
   "story_estimates": {
@@ -1164,7 +1172,7 @@
   ],
   "sprint_approval_baseline": 4,
   "release_approval_baseline": 7,
-  "dev_touch_baseline": 14,
+  "dev_touch_baseline": 2,
   "unadvanced_write_nudge_baseline": 0,
   "sprint_files_touched": [
     "specs/stories/ST-2-Repeated-Story.md",
