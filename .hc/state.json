@@ -621,6 +621,38 @@
       "blocked": null,
       "acceptance_check_count": 1,
       "acceptance_check_note": "Verified that Compose for Desktop Admin Dashboard lists all registered nodes with ID, OS, status badges, CPU, and RAM metrics via NodesTabRenderer and NodeHardwareMetrics, and that NodeStatusViewModel automated 4-second polling loop satisfies the <5 second real-time update requirement."
+    },
+    {
+      "title": "Ingest GitHub Dependabot Alerts (Implementation)",
+      "acceptance_criteria": [
+        "Connect to GitHub API using App/Token authentication.",
+        "Fetch open Dependabot alerts for a specified repository.",
+        "Map the alerts into an internal format suitable for the Triage Queue."
+      ],
+      "user_story": "As a security tool, I want to ingest Dependabot alerts from a GitHub repository so that I can automatically triage and fix vulnerable dependencies.",
+      "epic_id": "EP-0001",
+      "type": "User Story",
+      "id": "US-0013",
+      "priority": "Must",
+      "version": "v0.1.0-MVP",
+      "stages_completed": [
+        "Draft"
+      ],
+      "status": "Draft",
+      "dod_checks": [
+        "Code reviewed-ready",
+        "Automated tests written and passing",
+        "Actual tokens spent logged"
+      ],
+      "approach": "Write a github_client module to authenticate with GitHub, fetch open Dependabot alerts, and map them to an internal Finding model.",
+      "test_approach": "Mock GitHub API responses and verify the mapping to the internal Finding model.",
+      "risks": "GitHub API rate limits or lack of permissions.",
+      "estimate": 3000,
+      "tasks": [
+        "Define internal Finding data model.",
+        "Implement GitHub auth and API request for Dependabot alerts.",
+        "Map GitHub response to Finding objects."
+      ]
     }
   ],
   "impediment_log": [
@@ -693,10 +725,11 @@
     "current_usd_spend": 0.4808444
   },
   "token_usage": {
-    "total": 253251,
+    "total": 326025,
     "agents": {
       "ScrumMaster": 27410,
-      "ProductOwner": 225841
+      "ProductOwner": 263280,
+      "DevTeam": 35335
     }
   },
   "story_estimates": {
@@ -711,6 +744,9 @@
     "US-0006": {
       "estimate": 25000,
       "actual": 24000
+    },
+    "US-0013": {
+      "estimate": 3000
     }
   },
   "sprint_report_kpis": {},
