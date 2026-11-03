@@ -249,6 +249,19 @@
       "id": "US-0014"
     },
     {
+      "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
+      "acceptance_criteria": [
+        "Analyze the codebase for usages of the upgraded dependency.",
+        "Identify breaking changes between the old and new version of the dependency.",
+        "Modify the calling code to match the new API if necessary.",
+        "Include these code changes alongside the dependency version bump in the generated patch."
+      ],
+      "user_story": "As a Developer, I want the automated fix to adapt my code to breaking API changes introduced by the dependency upgrade, so that the PR doesn't break the build.",
+      "epic_id": "EP-0002",
+      "type": "User Story",
+      "id": "US-0015"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -770,7 +783,8 @@
     "specs/stories/US-0003-Handle-Breaking-API-Changes-in-SCA-Fixes.md",
     "specs/stories/US-0004-Sandbox-Validation-of-Fixes.md",
     "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md",
-    "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md"
+    "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md",
+    "specs/stories/US-0014-Generate-Dependency-Upgrade-Patch-(Implementation).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
