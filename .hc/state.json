@@ -396,7 +396,8 @@
       "overview": "The gradlew script was committed without executable permissions, causing the test suite execution to fail during the Tested gate. DevTeam needs to ensure executable permissions are set before pushing wrapper scripts.",
       "owner": "DevTeam",
       "type": "Issue",
-      "id": "SPEC-ISSUE-0001"
+      "id": "SPEC-ISSUE-0001",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "EP-0005",
