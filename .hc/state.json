@@ -299,7 +299,8 @@
       "depends_on": [
         "US-0014"
       ],
-      "priority": "Should"
+      "priority": "Should",
+      "version": "v0.1.0-MVP"
     },
     {
       "id": "EP-0005",
