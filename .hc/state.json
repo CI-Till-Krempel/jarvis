@@ -233,7 +233,8 @@
       "user_story": "As a security tool, I want to ingest Dependabot alerts from a GitHub repository so that I can automatically triage and fix vulnerable dependencies.",
       "epic_id": "EP-0001",
       "type": "User Story",
-      "id": "US-0013"
+      "id": "US-0013",
+      "priority": "Must"
     },
     {
       "acceptance_criteria": [
@@ -660,13 +661,13 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 0.5,
-    "current_usd_spend": 0.4515698
+    "current_usd_spend": 0.4808444
   },
   "token_usage": {
-    "total": 181062,
+    "total": 216497,
     "agents": {
       "ScrumMaster": 27410,
-      "ProductOwner": 153652
+      "ProductOwner": 189087
     }
   },
   "story_estimates": {
