@@ -230,9 +230,9 @@
       ],
       "review_denial": {
         "stage": "Tested",
-        "reason": "The HTTP calls in Main.kt for submitting and polling jobs are commented out (`// client.get` and `// setBody(newJob)`). This means the implementation does not actually satisfy the acceptance criteria of communicating with the Control Server. Please implement the actual API calls instead of leaving them commented out.",
+        "reason": "The test suite could not be executed because there is no Gradle wrapper (`gradlew`) committed to the repository, and the system `gradle` command is not available. Please commit the Gradle wrapper files (e.g., `gradlew`, `gradlew.bat`, and the `gradle/wrapper/` directory) and ensure there is at least one test.",
         "by": "QA",
-        "review_count_at_denial": 5
+        "review_count_at_denial": 7
       }
     },
     {
@@ -859,9 +859,9 @@
       "estimate": 10000,
       "review_denial": {
         "stage": "Tested",
-        "reason": "The HTTP calls in Main.kt for submitting and polling jobs are commented out (`// client.get` and `// setBody(newJob)`). This means the implementation does not actually satisfy the acceptance criteria of communicating with the Control Server. Please implement the actual API calls instead of leaving them commented out.",
+        "reason": "The test suite could not be executed because there is no Gradle wrapper (`gradlew`) committed to the repository, and the system `gradle` command is not available. Please commit the Gradle wrapper files (e.g., `gradlew`, `gradlew.bat`, and the `gradle/wrapper/` directory) and ensure there is at least one test.",
         "by": "QA",
-        "review_count_at_denial": 5
+        "review_count_at_denial": 7
       }
     }
   ],
@@ -944,16 +944,16 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 2.3699936
+    "current_usd_spend": 2.6746432
   },
   "token_usage": {
-    "total": 2946062,
+    "total": 3646271,
     "agents": {
       "ScrumMaster": 42468,
       "ProductOwner": 529567,
-      "DevTeam": 1794278,
+      "DevTeam": 2222790,
       "Architect": 449471,
-      "QA": 130278
+      "QA": 401975
     }
   },
   "story_estimates": {
@@ -1189,7 +1189,7 @@
   "sprint_approval_baseline": 4,
   "release_approval_baseline": 7,
   "dev_touch_baseline": 2,
-  "unadvanced_write_nudge_baseline": 4,
+  "unadvanced_write_nudge_baseline": 5,
   "sprint_files_touched": [
     "specs/stories/ST-2-Repeated-Story.md",
     "specs/stories/US-0012-Energy-Consumption-Correlation-and-Reporting-per-Job-via-OS-and-Utilization-Telemetry.md",
@@ -1270,7 +1270,7 @@
     "build.gradle.kts",
     "src/main/kotlin/Main.kt"
   ],
-  "source_content_change_count": 4,
+  "source_content_change_count": 5,
   "last_check_build": {
     "checked": null,
     "passing": null,
@@ -1278,12 +1278,12 @@
   },
   "last_pr_checks": {
     "passing": true,
-    "git_push_count_at_check": 7
+    "git_push_count_at_check": 8
   },
-  "git_push_count": 7,
+  "git_push_count": 8,
   "pr_review_calls": {
     "Architect": 7,
-    "QA": 5,
+    "QA": 7,
     "DevTeam": 2
   },
   "architect_review_baseline": 7,
