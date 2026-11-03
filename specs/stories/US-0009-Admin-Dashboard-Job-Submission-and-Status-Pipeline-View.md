@@ -15,6 +15,7 @@
 
 ## Notes
 
+- ⚠️ REVIEW DENIED at Reviewed by Architect: The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.
 
 ## Test Approach
 UI tests and mock Control Server responses.

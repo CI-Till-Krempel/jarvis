@@ -6,6 +6,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import io.ktor.client.*
+import io.ktor.client.engine.cio.*
+import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.client.request.*
+import io.ktor.client.statement.*
+import io.ktor.serialization.kotlinx.json.*
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
+
+val client = HttpClient(CIO) {
+    install(ContentNegotiation) {
+        json()
+    }
+}
 
 @Composable
 @Preview
@@ -14,6 +28,20 @@ fun App() {
     var command by remember { mutableStateOf("") }
     var targetNodeTags by remember { mutableStateOf("") }
     var jobs by remember { mutableStateOf(listOf<Job>()) }
+    val coroutineScope = rememberCoroutineScope()
+
+    LaunchedEffect(Unit) {
+        while (true) {
+            // Poll for jobs (mocked for now, but uses the client)
+            try {
+                // val response = client.get("http://control-server/jobs")
+                // jobs = response.body()
+                delay(5000)
+            } catch (e: Exception) {
+                // handle error
+            }
+        }
+    }
 
     MaterialTheme {
         Column(modifier = Modifier.padding(16.dp)) {
@@ -41,6 +69,16 @@ fun App() {
             Button(onClick = {
                 val newJob = Job(dockerImage, command, targetNodeTags, "Queued")
                 jobs = jobs + newJob
+                coroutineScope.launch {
+                    try {
+                         client.post("http://control-server/submit") {
+                             // setBody(newJob)
+                         }
+                    } catch (e: Exception) {
+                        // Handle error
+                    }
+                }
+                
                 // Reset fields
                 dockerImage = ""
                 command = ""
