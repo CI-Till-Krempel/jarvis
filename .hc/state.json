@@ -382,6 +382,14 @@
       "version": "v1.0"
     },
     {
+      "id": "ISSUE-0007",
+      "type": "Issue",
+      "title": "Backlog priority order conflict: US-0004 was marked 'Must' while depending on prerequisite US-0002, causing advance_story_stage to reject advancing US-0002 to Implemented until PO reprioritized US-0004.",
+      "status": "Draft",
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -401,14 +409,6 @@
       "title": "Smart Plug Energy Monitoring",
       "status": "Open",
       "priority": "Could"
-    },
-    {
-      "id": "ISSUE-0007",
-      "type": "Issue",
-      "title": "Backlog priority order conflict: US-0004 was marked 'Must' while depending on prerequisite US-0002, causing advance_story_stage to reject advancing US-0002 to Implemented until PO reprioritized US-0004.",
-      "status": "Draft",
-      "priority": "Won't",
-      "version": "Backlog (unplanned)"
     },
     {
       "id": "ISSUE-0005",
