@@ -320,7 +320,7 @@
         "US-0014"
       ],
       "priority": "Must",
-      "version": "v1.0",
+      "version": "v0.1.0-MVP",
       "stages_completed": [
         "Draft"
       ],
