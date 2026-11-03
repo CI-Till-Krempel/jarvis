@@ -275,6 +275,19 @@
       "id": "US-0016"
     },
     {
+      "acceptance_criteria": [
+        "Push the validated patch to a new branch in the target GitHub repository.",
+        "Open a Pull Request against the default branch.",
+        "PR description must include: vulnerability details (CVE), reason for fix, test results, and risk assessment.",
+        "Apply appropriate labels to the PR (e.g., 'security', 'auto-fix')."
+      ],
+      "user_story": "As a Developer, I want the tool to open a Pull Request with the validated fix, including a detailed description of the vulnerability and the test results, so that I can quickly review and merge it.",
+      "title": "Create GitHub PR with Fix and Audit Info (Implementation)",
+      "epic_id": "EP-0001",
+      "type": "User Story",
+      "id": "US-0017"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -798,7 +811,8 @@
     "specs/stories/US-0005-Create-GitHub-PR-with-Fix-and-Audit-Info.md",
     "specs/stories/US-0013-Ingest-GitHub-Dependabot-Alerts-(Implementation).md",
     "specs/stories/US-0014-Generate-Dependency-Upgrade-Patch-(Implementation).md",
-    "specs/stories/US-0015-Handle-Breaking-API-Changes-in-SCA-Fixes-(Implementation).md"
+    "specs/stories/US-0015-Handle-Breaking-API-Changes-in-SCA-Fixes-(Implementation).md",
+    "specs/stories/US-0016-Sandbox-Validation-of-Fixes-(Implementation).md"
   ],
   "source_content_change_count": 0,
   "last_check_build": {
