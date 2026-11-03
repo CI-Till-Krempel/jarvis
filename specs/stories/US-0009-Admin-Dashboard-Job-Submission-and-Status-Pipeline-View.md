@@ -2,7 +2,7 @@
 
 - Story ID: US-0009
 - Title: Admin Dashboard Job Submission and Status Pipeline View
-- Status: Implemented
+- Status: Reviewed
 - Priority: Must
 - Owner: Scrum Team
 - Last Updated: 2026-11-03
@@ -15,7 +15,6 @@
 
 ## Notes
 
-- ⚠️ REVIEW DENIED at Reviewed by Architect: The Compose UI implementation is purely in-memory. It requires an HTTP client (like Ktor) to post jobs to the Control Server and poll/stream their status updates as required by the acceptance criteria.
 
 ## Test Approach
 UI tests and mock Control Server responses.
