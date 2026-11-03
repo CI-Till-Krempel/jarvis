@@ -338,7 +338,7 @@
         "Given computed job energy metrics, When the admin requests job execution details via the API or dashboard, Then the total energy consumed (kWh) and average power draw (W) are returned in the job report."
       ],
       "notes": "Replaces physical smart plug telemetry with native OS power metrics (macOS powermetrics/IOKit, Windows RAPL) and software TDP estimation models.",
-      "version": "v0.2"
+      "version": "v1.0"
     },
     {
       "id": "EP-0005",
