@@ -458,6 +458,9 @@
       "acceptance_criteria": [
         "A structured readiness checklist is created and agreed upon by PO and Architect.",
         "The checklist is applied before grooming sessions to ensure stories meet the criteria."
+      ],
+      "stages_completed": [
+        "Draft"
       ]
     },
     {
@@ -935,10 +938,10 @@
     "current_usd_spend": 0.69216
   },
   "token_usage": {
-    "total": 125980,
+    "total": 168766,
     "agents": {
       "ScrumMaster": 42468,
-      "ProductOwner": 83512
+      "ProductOwner": 126298
     }
   },
   "story_estimates": {
