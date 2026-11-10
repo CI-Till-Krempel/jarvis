@@ -1,0 +1,1 @@
+# DevTeam Customization\n\n## Custom Behavior\n- Ensure you pull and rebase the latest develop branch onto your feature branch before calling `mark_pr_ready_for_review` to eliminate merge conflicts on `specs/ROADMAP.md` and other files.\n- Always ensure executable permissions (e.g. `chmod +x gradlew`) are verified before pushing test runner scripts.
