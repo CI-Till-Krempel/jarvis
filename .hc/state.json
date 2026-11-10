@@ -396,8 +396,7 @@
       "overview": "The gradlew script was committed without executable permissions, causing the test suite execution to fail during the Tested gate. DevTeam needs to ensure executable permissions are set before pushing wrapper scripts.",
       "owner": "DevTeam",
       "type": "Issue",
-      "id": "SPEC-ISSUE-0001",
-      "version": "Backlog (unplanned)"
+      "id": "SPEC-ISSUE-0001"
     },
     {
       "id": "EP-0005",
@@ -1001,15 +1000,15 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 8.251980000000001
+    "current_usd_spend": 8.277332200000002
   },
   "token_usage": {
-    "total": 5356175,
+    "total": 5567798,
     "agents": {
       "ScrumMaster": 189592,
       "ProductOwner": 570065,
       "DevTeam": 2115598,
-      "ScrumOrchestrator": 697578,
+      "ScrumOrchestrator": 909201,
       "Architect": 1306211,
       "QA": 1247608
     }
@@ -2532,6 +2531,14 @@
     {
       "role": "user",
       "content": "For context:[DevTeam] `transfer_to_agent` tool returned result: {'result': None}"
+    },
+    {
+      "role": "model",
+      "content": "**Current Understanding & Setup Status:**\nWe hit the end of the sprint lifecycle state because the test run failed in the previous sprint close and now we are in the \"Review, Retro & Release\" phase mechanically, meaning DevTeam is getting blocked from writing more files trying to hack around the permissions.\n\nSince the framework change is the robust way to handle this without agents battling git index conflicts or `package.json` hacks, the PR is open (#5). If you want to bypass the framework change and just fix it manually on the branch (cherry-picking or running `chmod`), I can tell DevTeam to stop fighting it. But right now, we are in a blocked state for US-0009 and the phase restricts further code writes.\n\n**Artifacts Updated:**\n- State saved.\n\n**Next Actions:**\n- **You (Human):** If you prefer to skip the framework change PR, please manually fix the `gradlew` permissions on `feature/US-0009-admin-dashboard-job-submission` and push it:\n  ```bash\n  git checkout feature/US-0009-admin-dashboard-job-submission\n  git update-index --chmod=+x gradlew\n  git commit -m \"fix: make gradlew executable\"\n  git push\n  ```\n- **Once you have done that**, confirm here so QA can rerun `check_build()` and we can finish the sprint."
+    },
+    {
+      "role": "user",
+      "content": "The logic for framework changes has changed (changed in horseless carriage. Close the existing framework change PR and create one that follows the new logic."
     }
   ],
   "hc_version": "0.1.0",
@@ -3046,6 +3053,15 @@
       "summary": "Workbench change needs new network access: services.gradle.org, repo.maven.apache.org",
       "detail": "Draft PR opened by Architect: https://github.com/CI-Till-Krempel/jarvis/pull/5. A human operator must add the listed host(s) to Horseless Carriage's own config/net-proxy/allowlist.filter and restart net-proxy, outside this repo, before this workbench's tests can actually reach them.",
       "created_at": "2026-11-03T14:25:56.972317+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 38,
+      "kind": "critical_error",
+      "summary": "🚫 [TOKEN BUDGET EXCEEDED] Sprint token limit (5,000,000) reached. Current usage: 5,378,206. Agent execution halted.",
+      "detail": "To resume immediately: raise SPRINT_TOKEN_BUDGET in .env and restart the agent container. To let this sprint close out as-is: no action needed - Scrum Master's own ritual budget lets it close the sprint out (retro/KPIs/report) regardless, and Product Owner has a small grace allowance left to finish the release PR; check list_blocking_interactions() or this log for confirmation once it does.",
+      "created_at": "2026-11-10T14:22:45.406709+00:00",
       "resolved": false,
       "resolved_at": null
     }
