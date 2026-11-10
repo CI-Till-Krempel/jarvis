@@ -914,6 +914,14 @@
       "sprint_number": 6,
       "recurs_since_sprint": null,
       "issue_id": "SPEC-ISSUE-0001"
+    },
+    {
+      "description": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
+      "owner": "Architect",
+      "status": "open",
+      "category": "technical",
+      "sprint_number": 7,
+      "recurs_since_sprint": null
     }
   ],
   "retro_actions": [
@@ -1003,10 +1011,10 @@
     "current_usd_spend": 8.277332200000002
   },
   "token_usage": {
-    "total": 5567798,
+    "total": 5784336,
     "agents": {
-      "ScrumMaster": 189592,
-      "ProductOwner": 570065,
+      "ScrumMaster": 298548,
+      "ProductOwner": 677647,
       "DevTeam": 2115598,
       "ScrumOrchestrator": 909201,
       "Architect": 1306211,
