@@ -399,6 +399,13 @@
       "id": "SPEC-ISSUE-0001"
     },
     {
+      "title": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
+      "overview": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
+      "owner": "Architect",
+      "type": "Issue",
+      "id": "SPEC-ISSUE-0002"
+    },
+    {
       "id": "EP-0005",
       "type": "Epic",
       "title": "Cluster Admin Dashboard & Policy Management",
@@ -1008,12 +1015,12 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 8.277332200000002
+    "current_usd_spend": 8.789861600000002
   },
   "token_usage": {
-    "total": 5784336,
+    "total": 6235525,
     "agents": {
-      "ScrumMaster": 298548,
+      "ScrumMaster": 749737,
       "ProductOwner": 677647,
       "DevTeam": 2115598,
       "ScrumOrchestrator": 909201,
@@ -1064,74 +1071,74 @@
     "security": {
       "vulnerability_scan_results": {
         "high": 0,
-        "low": 1649,
+        "low": 1699,
         "medium": 25,
         "critical": 0
       },
       "vulnerability_scan_available": true
     },
+    "team_effectiveness": {
+      "say_do_ratio": 0,
+      "commitment_reliability_note": "not available - no estimate-accuracy tracking exists yet"
+    },
     "prompt_context_usage": {
-      "ScrumOrchestrator": {
+      "ProductOwner": {
+        "model": "scrum-po",
+        "context_window_tokens": 1048576,
         "available": true,
-        "usage_percent": 0.77,
-        "context_window_tokens": 1048576,
-        "prompt_tokens": 8030,
-        "model": "scrum-orchestrator"
-      },
-      "Architect": {
-        "prompt_tokens": 3696,
-        "context_window_tokens": 1048576,
-        "usage_percent": 0.35,
-        "model": "scrum-arch",
-        "available": true
+        "prompt_tokens": 5940,
+        "usage_percent": 0.57
       },
       "ScrumMaster": {
-        "usage_percent": 0.58,
-        "model": "scrum-sm",
-        "available": true,
         "prompt_tokens": 6110,
-        "context_window_tokens": 1048576
+        "usage_percent": 0.58,
+        "context_window_tokens": 1048576,
+        "available": true,
+        "model": "scrum-sm"
       },
       "DevTeam": {
-        "context_window_tokens": 1048576,
         "model": "scrum-dev",
+        "context_window_tokens": 1048576,
         "available": true,
         "prompt_tokens": 5211,
         "usage_percent": 0.5
       },
-      "QA": {
-        "usage_percent": 0.29,
+      "Architect": {
         "available": true,
-        "prompt_tokens": 3029,
-        "model": "scrum-qa",
-        "context_window_tokens": 1048576
-      },
-      "ProductOwner": {
-        "usage_percent": 0.57,
-        "available": true,
-        "model": "scrum-po",
         "context_window_tokens": 1048576,
-        "prompt_tokens": 5940
+        "prompt_tokens": 3696,
+        "usage_percent": 0.35,
+        "model": "scrum-arch"
+      },
+      "ScrumOrchestrator": {
+        "usage_percent": 0.77,
+        "prompt_tokens": 8030,
+        "context_window_tokens": 1048576,
+        "model": "scrum-orchestrator",
+        "available": true
+      },
+      "QA": {
+        "available": true,
+        "context_window_tokens": 1048576,
+        "model": "scrum-qa",
+        "usage_percent": 0.29,
+        "prompt_tokens": 3029
       }
-    },
-    "maintainability": {
-      "tests_available": true,
-      "code_complexity_available": true,
-      "tests_run": 2,
-      "tests_failed": 2,
-      "code_complexity": 2.88756218905473,
-      "test_coverage_available": false
-    },
-    "team_effectiveness": {
-      "commitment_reliability_note": "not available - no estimate-accuracy tracking exists yet",
-      "say_do_ratio": 0
     },
     "result_quality": {
       "customer_satisfaction_note": "not available - no user/customer satisfaction survey exists yet",
       "defect_escape_rate_note": "not available - no defect/bug-lifecycle tracking exists yet"
+    },
+    "maintainability": {
+      "tests_available": true,
+      "tests_run": 2,
+      "test_coverage_available": false,
+      "tests_failed": 2,
+      "code_complexity_available": true,
+      "code_complexity": 2.89001636661211
     }
   },
-  "kpi_update_count": 6,
+  "kpi_update_count": 7,
   "kpi_baseline": 6,
   "backlog_scope_complete": true,
   "repo": {
@@ -3074,9 +3081,7 @@
       "resolved_at": null
     }
   ],
-  "overclaim_rejection_counts": {
-    "US-0009": 1
-  },
+  "overclaim_rejection_counts": {},
   "general_blockers": [
     {
       "description": "advance_story_stage Tested gate is blocked by test collection failure in horseless-carriage harness: ModuleNotFoundError: No module named 'agents' in conftest.py:60.",
@@ -3086,7 +3091,7 @@
       "resolved": false
     }
   ],
-  "steering_proposal_count": 4,
+  "steering_proposal_count": 5,
   "steering_baseline": 4,
   "steering_proposals": [
     {
@@ -3120,6 +3125,14 @@
       "new_content": "# Product Owner Customization\\n\\n## Custom Behavior\\n- Never change story priorities (e.g. using set_priority) during the Development phase. Once the sprint backlog is committed and the sprint has started, priorities are locked for the duration of the sprint to avoid process violations and wasted budget.\\n- Ensure strict prompts and templates are utilized to streamline specification drafting and keep token usage below 30% of the sprint budget.\\n- Utilize a structured story readiness checklist with the Architect prior to grooming to prevent redundant back-and-forth spec revisions.",
       "pr_url": "https://github.com/CI-Till-Krempel/jarvis/pull/3",
       "branch": "steering/productowner-identity-20261103135840"
+    },
+    {
+      "role": "DevTeam",
+      "proposed_by": "ScrumMaster",
+      "rationale": "DevTeam needs to rebase feature branches before marking PRs ready for review to eliminate merge conflicts on ROADMAP.md, and ensure file permissions are correct before pushing.",
+      "new_content": "# DevTeam Customization\\n\\n## Custom Behavior\\n- Ensure you pull and rebase the latest develop branch onto your feature branch before calling `mark_pr_ready_for_review` to eliminate merge conflicts on `specs/ROADMAP.md` and other files.\\n- Always ensure executable permissions (e.g. `chmod +x gradlew`) are verified before pushing test runner scripts.",
+      "pr_url": "https://github.com/CI-Till-Krempel/jarvis/pull/6",
+      "branch": "steering/devteam-identity-20261110142437"
     }
   ],
   "framework_change_proposal_count": 1,
