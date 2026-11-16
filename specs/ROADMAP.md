@@ -89,6 +89,13 @@ Stories
   - [ ] REVIEWED
   - [ ] TESTED
   - [ ] ACCEPTED
+- [SPEC-ISSUE-0002] The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.
+  - [ ] DRAFT
+  - [ ] READY
+  - [ ] IMPLEMENTED
+  - [ ] REVIEWED
+  - [ ] TESTED
+  - [ ] ACCEPTED
 - [ISSUE-0009] Token budget limit of 6,000,000 was exceeded (reaching 6,073,060 tokens) with ProductOwner accounting for over 50% of token usage and feature implementation taking only 34% of total tokens.
   - [x] DRAFT
   - [x] READY
