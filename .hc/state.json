@@ -398,7 +398,8 @@
       "type": "Issue",
       "id": "SPEC-ISSUE-0001",
       "status": "Draft",
-      "priority": "Must"
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
     },
     {
       "title": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
@@ -407,7 +408,8 @@
       "type": "Issue",
       "id": "SPEC-ISSUE-0002",
       "status": "Draft",
-      "priority": "Must"
+      "priority": "Must",
+      "version": "Backlog (unplanned)"
     },
     {
       "id": "EP-0005",
