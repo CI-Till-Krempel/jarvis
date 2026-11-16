@@ -265,7 +265,7 @@
         "Draft",
         "Ready"
       ],
-      "status": "Ready"
+      "status": "Draft"
     },
     {
       "acceptance_criteria": [
@@ -285,7 +285,7 @@
         "Draft",
         "Ready"
       ],
-      "status": "Ready"
+      "status": "Draft"
     },
     {
       "epic_id": "EP-0003",
@@ -308,7 +308,7 @@
         "Draft",
         "Ready"
       ],
-      "status": "Ready"
+      "status": "Draft"
     },
     {
       "acceptance_criteria": [
@@ -331,7 +331,7 @@
         "Draft",
         "Ready"
       ],
-      "status": "Ready"
+      "status": "Draft"
     },
     {
       "title": "Handle Breaking API Changes in SCA Fixes (Implementation)",
@@ -348,13 +348,13 @@
       "depends_on": [
         "US-0014"
       ],
-      "priority": "Must",
+      "priority": "Should",
       "version": "v0.1.0-MVP",
       "stages_completed": [
         "Draft",
         "Ready"
       ],
-      "status": "Ready"
+      "status": "Draft"
     },
     {
       "id": "US-0012",
@@ -396,14 +396,18 @@
       "overview": "The gradlew script was committed without executable permissions, causing the test suite execution to fail during the Tested gate. DevTeam needs to ensure executable permissions are set before pushing wrapper scripts.",
       "owner": "DevTeam",
       "type": "Issue",
-      "id": "SPEC-ISSUE-0001"
+      "id": "SPEC-ISSUE-0001",
+      "status": "Draft",
+      "priority": "Must"
     },
     {
       "title": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
       "overview": "The logic for framework changes has changed in Horseless Carriage. The existing framework change PR (#5) needs to be closed and a new one proposed following the updated logic in the next sprint.",
       "owner": "Architect",
       "type": "Issue",
-      "id": "SPEC-ISSUE-0002"
+      "id": "SPEC-ISSUE-0002",
+      "status": "Draft",
+      "priority": "Must"
     },
     {
       "id": "EP-0005",
@@ -612,7 +616,7 @@
   "sprint_number": 7,
   "sprint_backlog_pr_sprint": 7,
   "sprint_backlog_pr_opened": false,
-  "planning_output_commit_count": 25,
+  "planning_output_commit_count": 26,
   "sprint_backlog_pr_content_baseline": 24,
   "sprint_backlog": [
     {
@@ -1016,12 +1020,12 @@
   "budgets": {
     "total": 5000000,
     "total_usd": 50.0,
-    "current_usd_spend": 8.789861600000002
+    "current_usd_spend": 8.822654000000002
   },
   "token_usage": {
-    "total": 6235525,
+    "total": 6352203,
     "agents": {
-      "ScrumMaster": 749737,
+      "ScrumMaster": 866415,
       "ProductOwner": 677647,
       "DevTeam": 2115598,
       "ScrumOrchestrator": 909201,
@@ -2557,7 +2561,7 @@
       "content": "The logic for framework changes has changed (changed in horseless carriage. Close the existing framework change PR and create one that follows the new logic."
     }
   ],
-  "hc_version": "0.1.0",
+  "hc_version": "0.2.0",
   "retro_baseline": 8,
   "human_approvals": [
     {
@@ -3082,6 +3086,15 @@
       "summary": "🚫 [TOKEN BUDGET EXCEEDED] Sprint token limit (5,000,000) reached. Current usage: 5,378,206. Agent execution halted.",
       "detail": "To resume immediately: raise SPRINT_TOKEN_BUDGET in .env and restart the agent container. To let this sprint close out as-is: no action needed - Scrum Master's own ritual budget lets it close the sprint out (retro/KPIs/report) regardless, and Product Owner has a small grace allowance left to finish the release PR; check list_blocking_interactions() or this log for confirmation once it does.",
       "created_at": "2026-11-10T14:22:45.406709+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 39,
+      "kind": "approval",
+      "summary": "Release PR 'Sprint 7: sprint budget exhausted close-out' is waiting on a 'release' human approval.",
+      "detail": "Cannot create a release PR - this interaction level requires a fresh 'release' human approval for this increment - call record_human_approval('release', ...) first (see docs/INTERACTION-LEVELS.md).",
+      "created_at": "2026-11-10T14:25:00.735095+00:00",
       "resolved": false,
       "resolved_at": null
     }
