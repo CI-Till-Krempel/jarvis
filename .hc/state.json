@@ -618,7 +618,7 @@
   "sprint_number": 7,
   "sprint_backlog_pr_sprint": 7,
   "sprint_backlog_pr_opened": false,
-  "planning_output_commit_count": 27,
+  "planning_output_commit_count": 28,
   "sprint_backlog_pr_content_baseline": 24,
   "sprint_backlog": [
     {
@@ -2722,7 +2722,9 @@
     "specs/reports/STEERING-008.md",
     "specs/reports/SPRINT-REPORT-009.md",
     "specs/reports/RETRO-009.md",
-    "specs/reports/STEERING-009.md"
+    "specs/reports/STEERING-009.md",
+    "specs/reports/RETRO-010.md",
+    "specs/reports/STEERING-010.md"
   ],
   "source_content_change_count": 14,
   "last_check_build": {
@@ -3118,6 +3120,24 @@
       "summary": "Release PR 'Sprint 7: sprint budget exhausted close-out' is waiting on a 'release' human approval.",
       "detail": "Cannot create a release PR - this interaction level requires a fresh 'release' human approval for this increment - call record_human_approval('release', ...) first (see docs/INTERACTION-LEVELS.md).",
       "created_at": "2026-11-16T14:42:58.071543+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 42,
+      "kind": "critical_error",
+      "summary": "🚫 [TOKEN BUDGET EXCEEDED] Sprint token limit (5,000,000) reached. Current usage: 5,485,788. Agent execution halted.",
+      "detail": "To resume immediately: raise SPRINT_TOKEN_BUDGET in .env and restart the agent container. To let this sprint close out as-is: no action needed - Scrum Master's own ritual budget lets it close the sprint out (retro/KPIs/report) regardless, and Product Owner has a small grace allowance left to finish the release PR; check list_blocking_interactions() or this log for confirmation once it does.",
+      "created_at": "2026-11-24T08:44:16.135582+00:00",
+      "resolved": false,
+      "resolved_at": null
+    },
+    {
+      "id": 43,
+      "kind": "approval",
+      "summary": "Release PR 'Sprint 7: sprint budget exhausted close-out' is waiting on a 'release' human approval.",
+      "detail": "Cannot create a release PR - this interaction level requires a fresh 'release' human approval for this increment - call record_human_approval('release', ...) first (see docs/INTERACTION-LEVELS.md).",
+      "created_at": "2026-11-24T08:44:21.026810+00:00",
       "resolved": false,
       "resolved_at": null
     }
